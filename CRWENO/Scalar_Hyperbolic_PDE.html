@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20130110" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=700" />
+    <title>Application: Linear Advection Equation</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="Scalar_Hyperbolic_PDE_files/Scalar_Hyperbolic_PDE.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Scalar_Hyperbolic_PDE_files/Scalar_Hyperbolic_PDEIE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="Scalar_Hyperbolic_PDE_files/Scalar_Hyperbolic_PDE.js"></script>
+  </head>
+  <body style="background: rgb(255, 255, 255); margin: 0pt; " onload="onPageLoad();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 700px; " id="body_content">
+        <div style="float: left; margin-left: 0px; position: relative; width: 700px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="height: 80px; margin-left: 0px; position: relative; width: 700px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id2" style="height: 50px; left: 35px; position: absolute; top: 30px; width: 630px; z-index: 1; " class="style_SkipStroke shape-with-text">
+            <div class="text-content style_External_630_50" style="padding: 0px; ">
+              <div class="style">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style" id="id1">Application: Linear Advection Equation</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 5px; width: 695px;  height: 3px; left: 1px; position: absolute; top: 15px; width: 695px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 695px; ">
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 700px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id3" style="height: 333px; left: 0px; position: absolute; top: 315px; width: 372px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_372_333" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_1">The 5th order CRWENO scheme is applied to the linear advection equation. A smooth solution is considered on a periodic domain to analyze the accuracy and convergence properties of the new scheme. <br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">The CRWENO schemes show a significantly lower absolute error than the WENO scheme, for the same order of convergence.<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_1">While the CRWENO scheme is computationally more expensive than the WENO scheme (since it requires a tridiagonal inversion at each time step), it is more computationally efficient, i.e., for solutions with the same error, the CRWENO scheme is faster (since it requires a coarser grid).</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id4" style="height: 127px; left: -4px; position: absolute; top: 897px; width: 379px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_379_127" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_1">The CRWENO scheme is applied to a solution containing different waveforms - exponential, square, triangular, parabolic. It shows improved resolution, compared to the WENO scheme. The exponential wave shows significantly lower clipping while the square wave suffers for reduced smearing. </p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 5px; width: 695px;  height: 3px; left: 2px; position: absolute; top: 10px; width: 695px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 695px; ">
+            </div>
+          </div>
+          
+
+
+          <div id="id5" style="height: 31px; left: 0px; position: absolute; top: 1144px; width: 698px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_698_31" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2">Contact: ghosh (at) mcs (dot) anl (dot) gov</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 3px; width: 698px;  height: 1px; left: -1px; position: absolute; top: 1143px; width: 698px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 698px; ">
+              <img src="Scalar_Hyperbolic_PDE_files/shapeimage_3.png" alt="" style="height: 3px; left: 0px; margin-top: -1px; position: absolute; top: 0px; width: 698px; " />
+            </div>
+          </div>
+          
+
+
+          <div style="height: 235px; width: 335px;  height: 235px; left: 372px; position: absolute; top: 59px; width: 335px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="Scalar_Hyperbolic_PDE_files/droppedImage_2.png" alt="" style="border: none; height: 235px; width: 335px; " />
+          </div>
+          
+
+
+          <div style="height: 234px; width: 334px;  height: 234px; left: 377px; position: absolute; top: 298px; width: 334px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="Scalar_Hyperbolic_PDE_files/linadv_err_time.jpg" alt="" style="border: none; height: 234px; width: 335px; " />
+          </div>
+          
+
+
+          <div style="height: 277px; width: 396px;  height: 277px; left: -11px; position: absolute; top: 619px; width: 396px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="Scalar_Hyperbolic_PDE_files/linadv_disc.jpg" alt="" style="border: none; height: 278px; width: 396px; " />
+          </div>
+          
+
+
+          <div style="height: 272px; width: 300px;  height: 272px; left: 410px; position: absolute; top: 539px; width: 300px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="Scalar_Hyperbolic_PDE_files/linadv_disc_zoom1.jpg" alt="" style="border: none; height: 272px; width: 300px; " />
+          </div>
+          
+
+
+          <div style="height: 210px; width: 300px;  height: 210px; left: 410px; position: absolute; top: 802px; width: 300px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="Scalar_Hyperbolic_PDE_files/linadv_disc_zoom5.jpg" alt="" style="border: none; height: 210px; width: 300px; " />
+          </div>
+          
+
+
+          <div id="id6" style="height: 87px; left: -3px; position: absolute; top: 1031px; width: 699px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_699_87" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_1">The CRWENO schemes are more computationally efficient for discontinuous problems. The number in the parentheses for the numerical solutions to a triangular wave are the computational run-times. The CRWENO5 schemes yield solutions on a 160-point grid that are comparable to the WENO5 solution on a 240-point grid, while being less expensive.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 5px; width: 365px;  height: 3px; left: 2px; position: absolute; top: 314px; width: 365px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 365px; ">
+              <img src="Scalar_Hyperbolic_PDE_files/shapeimage_4.png" alt="" style="height: 5px; left: 0px; margin-top: -1px; position: absolute; top: 0px; width: 365px; " />
+            </div>
+          </div>
+          
+
+
+          <div id="id7" style="height: 280px; left: 1px; position: absolute; top: 27px; width: 248px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_248_280" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_3">    <a title="Overview.html" href="Overview.html">Overview</a><br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3">    <a title="Numerical_Scheme.html" href="Numerical_Scheme.html">Numerical Scheme<br /></a></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3">    <a title="" href="">Scalar PDEs</a><br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3">    <a title="1D_Euler_Equations.html" href="1D_Euler_Equations.html">1D Euler Equations</a><br /></p>
+                <p class="paragraph_style_3">    <a title="2D_Euler_Equations.html" href="2D_Euler_Equations.html">2D Euler Equations</a><br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3">    <a title="2D_Airfoils.html" href="2D_Airfoils.html">2D Airfoil Flows</a><br /></p>
+                <p class="paragraph_style_3">    <a title="3D_Wings_Rotors.html" href="3D_Wings_Rotors.html">3D Wing / Rotor Flows</a><br /></p>
+                <p class="paragraph_style_3">    <a title="Turbulent_Flows.html" href="Turbulent_Flows.html">DNS of Compressible Turbulence</a><br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_3">    <a title="Publications.html" href="Publications.html">Publications</a></p>
+              </div>
+            </div>
+          </div>
+          <div style="height: 1175px; line-height: 1175px; " class="spacer"> </div>
+        </div>
+        <div style="height: 150px; margin-left: 0px; position: relative; width: 700px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Start of StatCounter Code for iWeb -->
+<script type="text/javascript">
+var sc_project=7862141; 
+var sc_invisible=1; 
+var sc_security="6f5b11be"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="iweb analytics"
+href="http://statcounter.com/iweb/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7862141/0/6f5b11be/1/"
+alt="iweb analytics"></a></div></noscript>
+<!-- End of StatCounter Code for iWeb -->
+
+  </body>
+</html>
+
+

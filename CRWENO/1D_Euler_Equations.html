@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20130110" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=700" />
+    <title>One-Dimensional Euler Equations</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="1D_Euler_Equations_files/1D_Euler_Equations.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='1D_Euler_Equations_files/1D_Euler_EquationsIE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="1D_Euler_Equations_files/1D_Euler_Equations.js"></script>
+  </head>
+  <body style="background: rgb(255, 255, 255); margin: 0pt; " onload="onPageLoad();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 700px; " id="body_content">
+        <div style="float: left; margin-left: 0px; position: relative; width: 700px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="height: 80px; margin-left: 0px; position: relative; width: 700px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id2" style="height: 50px; left: 35px; position: absolute; top: 30px; width: 630px; z-index: 1; " class="style_SkipStroke shape-with-text">
+            <div class="text-content style_External_630_50" style="padding: 0px; ">
+              <div class="style">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style" id="id1">One-Dimensional Euler Equations</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+
+          <div style="height: 5px; width: 695px;  height: 3px; left: 1px; position: absolute; top: 15px; width: 695px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 695px; ">
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 700px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id3" style="height: 107px; left: 5px; position: absolute; top: 1269px; width: 688px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_688_107" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_1">The Shu-Osher problem describes the interaction between a shock wave and an entropy wave which results in high frequency waves behind the shock. The CRWENO schemes shows much better resolution of the high-frequency waves compared to the WENO scheme, while maintaining a non-oscillatory behavior across the discontinuities. The results are obtained using the 5th order CRWENO and WENO schemes and 3rd order TVD-RK3 time-stepping.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id4" style="height: 266px; left: 369px; position: absolute; top: 362px; width: 332px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_332_266" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_2">Entropy Wave Convection<br /></p>
+                <p class="paragraph_style_3">The 5th order CRWENO and WENO schemes are compared for a smooth problem - advection of an entropy wave over a periodic domain, to analyze accuracy and convergence. For the same order of convergence, the CRWENO scheme shows a significantly lower absolute error than the WENO scheme. <br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_3">The reconstruction of conserved, primitive and characteristic variables yield identical solutions for a smooth problem.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id5" style="height: 305px; left: 265px; position: absolute; top: 23px; width: 431px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_431_305" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_3">The Euler equations describe the dynamics of inviscid flows. The CRWENO schemes are applied the one-dimensional Euler equations. They are a system of non-linear hyperbolic partial differential equations and thus, they admit discontinuities in the solution. The scalar interpolation schemes are extended to vector quantities through the reconstruction of conserved, primitive and characteristic variables.<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_3">The convergence and accuracy of the new scheme is assessed for a smooth flow problem - advection of an entropy wave. The Shu-Osher problem describes the interaction of a shock wave with a density wave resulting in small length-scale waves. The performance of the CRWENO schemes is assessed for this problem.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 5px; width: 695px;  height: 3px; left: 2px; position: absolute; top: 10px; width: 695px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 695px; ">
+            </div>
+          </div>
+          
+
+
+          <div id="id6" style="height: 33px; left: 6px; position: absolute; top: 980px; width: 688px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_688_33" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4">Shock-Entropy Wave Interaction (Shu - Osher Problem)</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 5px; width: 695px;  height: 3px; left: 2px; position: absolute; top: 971px; width: 695px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 695px; ">
+              <img src="1D_Euler_Equations_files/shapeimage_3.png" alt="" style="height: 5px; left: 0px; margin-top: -1px; position: absolute; top: 0px; width: 695px; " />
+            </div>
+          </div>
+          
+
+
+          <div style="height: 253px; width: 356px;  height: 253px; left: 1px; position: absolute; top: 363px; width: 356px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="1D_Euler_Equations_files/droppedImage_2.png" alt="" style="border: none; height: 254px; width: 356px; " />
+          </div>
+          
+
+
+          <div style="height: 236px; width: 349px;  height: 236px; left: -1px; position: absolute; top: 630px; width: 349px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="1D_Euler_Equations_files/droppedImage_3.png" alt="" style="border: none; height: 236px; width: 350px; " />
+          </div>
+          
+
+
+          <div style="height: 236px; width: 340px;  height: 236px; left: 359px; position: absolute; top: 632px; width: 340px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="1D_Euler_Equations_files/droppedImage_4.png" alt="" style="border: none; height: 236px; width: 341px; " />
+          </div>
+          
+
+
+          <div style="height: 5px; width: 695px;  height: 3px; left: 1px; position: absolute; top: 350px; width: 695px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 695px; ">
+              <img src="1D_Euler_Equations_files/shapeimage_4.png" alt="" style="height: 5px; left: 0px; margin-top: -1px; position: absolute; top: 0px; width: 695px; " />
+            </div>
+          </div>
+          
+
+
+          <div id="id7" style="height: 87px; left: 5px; position: absolute; top: 873px; width: 688px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_688_87" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_1">The CRWENO schemes have a higher computational efficiency for the reconstruction of conserved and primitive variables. However, the reconstruction of characteristic variables requires the solution of a block tridiagonal system at each iteration. The CRWENO schemes are thus less efficient for the characteristic formulation.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 240px; width: 343px;  height: 240px; left: 12px; position: absolute; top: 1019px; width: 343px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="1D_Euler_Equations_files/ShuOsher1.jpg" alt="" style="border: none; height: 241px; width: 343px; " />
+          </div>
+          
+
+
+          <div style="height: 239px; width: 341px;  height: 239px; left: 361px; position: absolute; top: 1019px; width: 341px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="1D_Euler_Equations_files/ShuOsher1_zoom.jpg" alt="" style="border: none; height: 239px; width: 342px; " />
+          </div>
+          
+
+
+          <div id="id8" style="height: 280px; left: 1px; position: absolute; top: 27px; width: 248px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_248_280" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_5">    <a title="Overview.html" href="Overview.html">Overview</a><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">    <a title="Numerical_Scheme.html" href="Numerical_Scheme.html">Numerical Scheme<br /></a></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">    <a title="Scalar_Hyperbolic_PDE.html" href="Scalar_Hyperbolic_PDE.html">Scalar PDEs</a><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">    <a title="" href="">1D Euler Equations</a><br /></p>
+                <p class="paragraph_style_5">    <a title="2D_Euler_Equations.html" href="2D_Euler_Equations.html">2D Euler Equations</a><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">    <a title="2D_Airfoils.html" href="2D_Airfoils.html">2D Airfoil Flows</a><br /></p>
+                <p class="paragraph_style_5">    <a title="3D_Wings_Rotors.html" href="3D_Wings_Rotors.html">3D Wing / Rotor Flows</a><br /></p>
+                <p class="paragraph_style_5">    <a title="Turbulent_Flows.html" href="Turbulent_Flows.html">DNS of Compressible Turbulence</a><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_5">    <a title="Publications.html" href="Publications.html">Publications</a></p>
+              </div>
+            </div>
+          </div>
+          <div style="height: 1376px; line-height: 1376px; " class="spacer"> </div>
+        </div>
+        <div style="height: 150px; margin-left: 0px; position: relative; width: 700px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id9" style="height: 31px; left: 0px; position: absolute; top: 19px; width: 698px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_698_31" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_6">Contact: ghosh (at) mcs (dot) anl (dot) gov</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 3px; width: 698px;  height: 1px; left: 0px; position: absolute; top: 14px; width: 698px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 698px; ">
+              <img src="1D_Euler_Equations_files/shapeimage_5.png" alt="" style="height: 3px; left: 0px; margin-top: -1px; position: absolute; top: 0px; width: 698px; " />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Start of StatCounter Code for iWeb -->
+<script type="text/javascript">
+var sc_project=7862141; 
+var sc_invisible=1; 
+var sc_security="6f5b11be"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="iweb analytics"
+href="http://statcounter.com/iweb/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7862141/0/6f5b11be/1/"
+alt="iweb analytics"></a></div></noscript>
+<!-- End of StatCounter Code for iWeb -->
+
+  </body>
+</html>
+
+

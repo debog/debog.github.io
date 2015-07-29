@@ -1,0 +1,109 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Debojyoti Ghosh - Research</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li class="current_page_item"><a href="#">Codes/Misc</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+</div>
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#"><span>Debojyoti Ghosh</span></a></h1>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+						
+				<h3>Codes</h3>
+				<p>These are some codes that I am developing as a part of my research. They are mostly written in C and require only the <a href="http://gcc.gnu.org/", target="blank">GNU C</a> compiler (and <a href="http://www.mpich.org/", target="blank">MPICH</a>). Some versions may require <a href="http://www.mcs.anl.gov/petsc/", target="blank">PETSc</a>. Compiling them is pretty straightforward. I use <a href="http://git-scm.com/", target="blank">Git</a> for source code management and maintain a copy of my repositories on <a href="https://bitbucket.org/", target="blank">Bitbucket</a>. Feel free to download, modify and use these codes if you think they are useful. Most of them should have a helpful "readme" file. Feedback is welcome.</p>	
+        <p>Since I am not a trained software developer, documentation may be lacking. However, the codes should make sense to someone with the appropriate background in numerical methods and the relevant physics.</p>
+		
+        <h4><a href="codes/hypar.html">HyPar</a></h4>
+        <p>
+				Numerical Solution of Hyperbolic-Parabolic partial differential equations: This provides a basic, unified framework (serial/parallel) for the numerical solution to <em>n</em>-dimensional hyperbolic-parabolic PDEs on Cartesian grids. A few physical models are included (linear advection-reaction-diffusion, Fokker-Planck model for power systems, Euler equations for inviscid fluid dynamics, etc) and others can be added with relative ease. Several spatial discretization schemes (1st order, 3rd order MUSCL, 5th order WENO, 5th order CRWENO, 2nd/4th order central compact and non-compact schemes, etc) and multi-stage Runge-Kutta time-integration schemes are available and new ones can be added easily. The code can also be compiled with <a href="http://www.mcs.anl.gov/petsc/", target="blank"><strong>PETSc</strong></a> to use the time-integration methods provided by its <a href="http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/TS/index.html", target="blank"><strong>TS</strong></a> module. </li>
+        <br><strong>Dependencies</strong>: MPICH (if not available, a serial version is compiled), PETSc (optional)<br>
+        <a href="codes/hypar.html"><strong>[more details]</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bitbucket.org/deboghosh/hypar", target="blank"><strong>[source]</strong></a><br>
+        </p>
+        <br>
+				<h4><a href="codes/ibcartins3d.html">IBCartINS3D</a></h4>
+        <p>A 3D, Cartesian, incompressible Navier-Stokes solver with immersed boundary technique: The code is based on the fractional-step method and uses a higher-order upwind reconstruction schemes for the convection term and a second-order central discretization for the viscous and pressure correction terms. The viscous terms are treated using implicit time-integration and convection is treated explicitly. The parallel version uses a 3D, Cartesian domain decomposition. The code can also be compiled with <a href="http://www.mcs.anl.gov/petsc/", target="blank"><strong>PETSc</strong></a> to use the time-integration methods provided by its <a href="http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/TS/index.html", target="blank"><strong>TS</strong></a> module. </li>
+        <br><strong>Dependencies</strong>: MPICH (if not available, a serial version is compiled), PETSc (optional)<br>
+        <a href="codes/ibcartins3d.html"><strong>[more details]</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bitbucket.org/deboghosh/ibcartins3d", target="blank"><strong>[source]</strong></a><br>
+        </p>
+        <br>
+				<h4><a href="codes/tridiaglu.html">TridiagLU</a></h4>
+        <p>
+        Serial and parallel (MPI) algorithms for the direct solution (LU decomposition) of non-periodic tridiagonal systems of equations: Two functions are available, one utilizing the recursive-doubling algorithm and the other solves the system in parallel by rearranging the points adjacent to the sub-domain boundaries. The latter algorithm uses the recursive-doubling or gather-and-solve algorithms to solve the reduced system resulting from the rearrangement. These functions can solve a single system as well as a stack of systems. A code is also provided to test the functions as well as their walltimes. </li>
+        <br><strong>Dependencies</strong>: MPICH (if not available, a serial version is compiled)<br>
+        <a href="codes/tridiaglu.html"><strong>[more details]</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bitbucket.org/deboghosh/tridiaglu", target="blank"><strong>[source]</strong></a><br>
+        </p>
+
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+
+				<h3>Quick Links</h3>
+				<li><a href="codes/hypar.html">HyPar</a></li>
+				<li><a href="codes/ibcartins3d.html">IBCartINS3D</a></li>
+				<li><a href="codes/tridiaglu.html">TridiagLU</a></li>
+        <p></p>
+        <h3>Misc</h3>
+        <br>
+        <a href="codes/petsc.html">PETSc Installation</a><br><br>
+        Overture Installation
+        <li><a href="codes/overture_fusion.html">LCRC Clusters</a></li>
+        <li><a href="codes/overture_mcslinux.html">Linux Desktop</a></li>
+        <p></p>
+        <p><a href="https://bitbucket.org/deboghosh", target="blank">My Bitbucket profile</a></p>
+	</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Debojyoti Ghosh, Postdoctoral Research Associate, MCS Division, Argonne National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+</div>
+<!-- end #footer -->
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8725416; 
+var sc_invisible=1; 
+var sc_security="0c597bb9"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8725416/0/0c597bb9/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

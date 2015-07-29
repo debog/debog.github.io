@@ -1,0 +1,235 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Debojyoti Ghosh - Research</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet" type="text/css" />
+<link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../resume.html">Resume</a></li>
+			<li><a href="../publications.html">Publications</a></li>
+			<li><a href="../research.html">Research</a></li>
+			<li class="current_page_item"><a href="../misc.html">Codes/Misc</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+</div>
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#"><span>Debojyoti Ghosh</span></a></h1>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+						
+				<h3>Overture Installation on a Linux Desktop</h3>
+        <p></p>
+        <p>These are the instructions for installing <a href="http://overtureframework.org/", target=blank><strong>Overture</strong></a> on Linux personal computer. These are adapted from the <a href="http://overtureframework.org/documentation/install.pdf", target=blank><strong>Installation Instructions</strong></a> provided by Overture. It is assumed here that the GNU C, C++ and FORTRAN compilers as well as MPICH are installed.</p>
+
+        <p>Dependencies: <a href="http://motif.ics.com", target=blank>Motif</a>, <a href="http://www.mesa3d.org", target=blank>Mesa</a>, <a href="http://libjpeg.sourceforge.net", target=blank>JPEG Library</a>, <a href="http://www.zlib.net", target=blank>ZLIB</a>, <a href="http://www.netlib.org/lapack/", target=blank>LAPACK</a> (Install as root if possible, through the distribution's repositories)</p>
+        <p>
+        For example, on Fedora systems:
+        <h6>yum install motif mesa libjpeg-turbo libjpeg-turbo-devel zlib zlib-devel lapack lapack-devel</h6>
+        </p>
+
+        <p><strong>Note:</strong> Using the latest GNU compilers can cause some compilation errors. These can be fixed by small modifications to the source files. Refer: <a href="http://www.freelists.org/post/overture/Compilation-error-for-CG", target=blank>Overture mailing list post</a>.</p>
+
+        <h4>Serial Installation</h4>
+        <p></p>
+        <h6><strong>HDF5</strong></h6>
+        <p>
+        <li>wget http://overtureframework.org/software/hdf5-1.8.8.tar.gz && gunzip hdf5-1.8.8.tar.gz && tar xvf hdf5-1.8.8.tar && rm hdf5-1.8.8.tar</li>
+        <li>cd hdf5-1.8.8</li>
+        <li>Open the file <strong>tools/lib/h5diff.c</strong> and remove line 647 ("//int i1, i2;") (Refer <a href="http://www.freelists.org/post/overture/Overture-Installation-on-Fedora-20", target=blank>Overture mailing list post</a>)</li>
+        <li>./configure --prefix=$PWD --enable-fortran --enable-cxx</li>
+        <li>make && make install && make check (make check may give an error)</li>
+        <li>cd ../</li>
+        <li>mv hdf-1.8.8/ hdf-1.8.8_serial</li>
+        </p>
+        <h6><strong>A++</strong></h6>
+        <p>
+        <li>wget http://overtureframework.org/software/AP-0.8.0.tar.gz && gunzip AP-0.8.0.tar.gz && tar xvf AP-0.8.0.tar && AP-0.8.0.tar</li>
+        <li>cd A++P++-0.8.0/</li>
+        <li>./configure --enable-SHARED_LIBS --prefix=$PWD</li>
+        <li>make && make install && make check</li>
+        <li>cd ../</li>
+        </p>
+        <h6><strong>PETSc</strong></h6>
+        <p>Skipping this since its an optional dependency to solve the system of equations for the incompressible Navier-Stokes.</p>
+        <h6><strong>Overture</strong></h6>
+        <p>
+        <li>mkdir overture</li>
+        <li>mkdir overture/serial</li>
+        <li>cd overture/serial</li>
+        <li>wget http://overtureframework.org/software/Overture.v25.tar.gz && gunzip Overture.v25.tar.gz && tar xvf Overture.v25.tar && Overture.v25.tar</li>
+        <li>wget http://overtureframework.org/software/cg.v25.tar.gz && gunzip cg.v25.tar.gz && tar xvf cg.v25.tar && rm cg.v25.tar</li>
+        </p>
+        <p>
+        Set up environment variables:-
+        <li>export XLIBS=/usr</li>
+        <li>export OpenGL=/usr</li>
+        <li>export MOTIF=/usr</li>
+        <li>export HDF=/path/to/hdf-1.8.8_serial</li>
+        <li>export APlusPlus=/path/to/A++P++-0.8.0/A++/install</li>
+        <li>export Overture=$PWD/Overture.v25</li>
+        <li>export CG=$PWD/cg.v25</li>
+        <li>export CGBUILDPREFIX=$CG</li>
+        <li>export LAPACK=/usr</li>
+        <li>export LD_LIBRARY_PATH=${MOTIF}/lib:${XLIBS}/lib:${HDF}/lib:${OpenGL}/lib:${Overture}/lib:${APlusPlus}/lib</li>
+        </p>
+
+        <p>
+        Compilation:
+        <li>cd Overture.v25/</li>
+        <li>./configure CC=g++ cc=gcc FC=gfortran</li>
+        <li>make</li>
+        <li>./check.p</li>
+        <li>cd ../</li>
+        </p>
+        <h6><strong>CG</strong></h6>
+        <li>cd cg.v25</li>
+        <li>make && make check</li>
+        <li>cd ../</li>
+        </p>
+        <p>
+
+        <h4>Parallel Installation</h4>
+        <p></p>
+        <h6><strong>HDF5</strong></h6>
+        <p>
+        <li>wget http://overtureframework.org/software/hdf5-1.8.8.tar.gz && gunzip hdf5-1.8.8.tar.gz && tar xvf hdf5-1.8.8.tar</li>
+        <li>cd hdf5-1.8.8</li>
+        <li>Open the file <strong>tools/lib/h5diff.c</strong> and remove line 647 ("//int i1, i2;") (Refer <a href="http://www.freelists.org/post/overture/Overture-Installation-on-Fedora-20", target=blank>Overture mailing list post</a>)</li>
+        <li><strong>CC=mpicc</strong> ./configure --prefix=$PWD</li>
+        <li>make && make install && make check (make check may give an error)</li>
+        <li>cd ../</li>
+        <li>mv hdf-1.8.8/ hdf-1.8.8_parallel</li>
+        </p>
+        <h6><strong>A++</strong></h6>
+        <p>Same as serial</p>
+        <h6><strong>P++</strong></h6>
+        <p>
+        <li>cd A++P++-0.8.0/</li>
+        <li>./configure --enable-PXX --prefix=$PWD --enable-SHARED_LIBS --with-mpi-include=-I/usr/include --with-mpi-lib-dirs="-Wl,-rpath,/usr/lib64 -L/usr/lib64/" --with-mpi-libs="-lmpich -lopa -lmpl -lrt -lpthread" --with-mpirun=mpirun --without-PADRE<br>(The values for --with-mpi-include, --with-mpi-lib-dirs, --with-mpi-libs can be found from running the command "mpicc -show")</li>
+        <li>make && make install && make check</li>
+        <li>cd ../</li>
+        </p>
+        <h6><strong>PETSc</strong></h6>
+        <p>Same as serial</p>
+        <h6><strong>Overture</strong></h6>
+        <p>
+        <li>wget http://overtureframework.org/software/Overture.v25.tar.gz && gunzip Overture.v25.tar.gz && tar xvf Overture.v25.tar</li>
+        <li>wget http://overtureframework.org/software/cg.v25.tar.gz && gunzip cg.v25.tar.gz && tar xvf cg.v25.tar</li>
+        </p>
+        <p>
+        Set up environment variables:-
+        <li>export XLIBS=/usr</li>
+        <li>export OpenGL=/usr</li>
+        <li>export MOTIF=/usr</li>
+        <li>export HDF=/path/to/hdf5-1.8.8_parallel</li>
+        <li>export APlusPlus=/path/to/A++P++-0.8.0/<strong>P++</strong>/install #(Yes, APlusPlus needs to be set to P++ install directory)</li>
+        <li>export PPlusPlus=/path/to/A++P++-0.8.0/P++/install</li>
+        <li>export Overture=$PWD/Overture.v25</li>
+        <li>export CG=$PWD/cg.v25</li>
+        <li>export CGBUILDPREFIX=$CG</li>
+        <li>export LAPACK=/usr</li>
+        <li>export LD_LIBRARY_PATH=${MOTIF}/lib:${XLIBS}/lib:${HDF}/lib:${OpenGL}/lib:${Overture}/lib:${APlusPlus}/lib<strong>:${PPlusPlus}/lib</strong></li>
+        </p>
+
+        <p>
+        Compilation:
+        <li>cd Overture.v25/</li>
+        <li>Edit the <strong>configure</strong> file - Find the following lines (Line number 515 to 523)
+        <ul>
+            elsif( $arg =~ /CC=(.*)/ )<br>
+            {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$CC = $1;  $CC =~ s/ //g;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if( $CC eq "kcc" ){ $CC = "KCC"; }<br>
+            }<br>
+            elsif( $arg =~ /cc=(.*)/ )<br>
+            {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$cc = $1; $cc =~ s/ //g;<br>
+            }
+        </ul>
+         &nbsp;&nbsp;and replace with
+        <ul>
+            elsif( $arg =~ /<strong>^</strong>CC=(.*)/ )<br>
+            {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$CC = $1;  $CC =~ s/ //g;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if( $CC eq "kcc" ){ $CC = "KCC"; }<br>
+            }<br>
+            elsif( $arg =~ /<strong>^</strong>cc=(.*)/ )<br>
+            {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$cc = $1; $cc =~ s/ //g;<br>
+            }<br>
+        </ul>
+         &nbsp;&nbsp;Refer: <a href="http://www.freelists.org/post/overture/Parallel-compilation-help,3", target=blank>Overture mailing list post</a>
+        <li>./configure parallel CC=mpicxx cc=mpicc FC=mpif90 bCC=g++ bcc=gcc bFC=gfortran</li>
+        <li>make</li>
+        <li>./check.p</li>
+        </p>
+        <h6><strong>CG</strong></h6>
+        <p> Same as serial </p>
+
+
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+
+				<h3>Quick Links</h3>
+				<li><a href="hypar.html">HyPar</a></li>
+				<li><a href="ibcartins3d.html">IBCartINS3D</a></li>
+				<li><a href="tridiaglu.html">TridiagLU</a></li>
+        <p></p>
+        <h3>Misc</h3>
+        <br>
+        <a href="petsc.html">PETSc Installation</a><br><br>
+        Overture Installation
+        <li><a href="overture_fusion.html">LCRC Clusters</a></li>
+        <li><a href="overture_mcslinux.html">Linux Desktop</a></li>
+        <p></p>
+        <p><a href="https://bitbucket.org/deboghosh", target="blank">My Bitbucket profile</a></p>
+	</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Debojyoti Ghosh, Postdoctoral Research Associate, MCS Division, Argonne National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+</div>
+<!-- end #footer -->
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8725416; 
+var sc_invisible=1; 
+var sc_security="0c597bb9"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8725416/0/0c597bb9/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

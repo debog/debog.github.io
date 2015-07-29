@@ -1,0 +1,198 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Debojyoti Ghosh - Research</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet" type="text/css" />
+<link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../resume.html">Resume</a></li>
+			<li><a href="../publications.html">Publications</a></li>
+			<li><a href="../research.html">Research</a></li>
+			<li class="current_page_item"><a href="../misc.html">Codes/Misc</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+</div>
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#"><span>Debojyoti Ghosh</span></a></h1>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+						
+				<h3>IBCartINS3D</h3>
+        <p></p> 
+        <p>
+        This code is a work-in-progress. The Git commit messages in the repository show the latest progress like bugfixes, addition of features, etc.<br>
+        </p> 
+				<h4>Download</h4>
+        <p></p>
+        <p>
+        With Bitbucket account and SSH keys:
+        <h6>git clone <a href="git@bitbucket.org:deboghosh/ibcartins3d.git", target=blank>git@bitbucket.org:deboghosh/ibcartins3d.git</a></h6>
+        </p>
+        <p>
+        Otherwise:
+        <h6>git clone <a href="https://bitbucket.org/deboghosh/ibcartins3d.git", target=blank>https://bitbucket.org/deboghosh/ibcartins3d.git </a></h6>
+        </p>
+        <p>Branches:
+        <ul>
+        <li><strong>master</strong></li>
+        <li><strong>with-petsc</strong></li>
+        </ul>
+        </p>
+				<h4>Overview</h4>
+        <p></p>
+        <p>
+        Unsteady incompressible Navier-Stokes solver based on the Fractional Step algorithm (Kim & Moin, 1982) with interface to use PETSc for time integration.
+        </p>
+        <p>
+        Features:
+        <li>3D Cartesian
+        <li>Spatial Discretization of Convective terms</li>
+        <ul>
+          <li>First order upwind</li>
+          <li>Second order central</li>
+          <li>Fourth order central</li>
+          <li>Fifth order upwind (with WENO limiting) </li>
+        </ul>
+        <li>Time integration</li>
+        <ul>
+          <li>With <a href="http://www.mcs.anl.gov/petsc", target=blank>PETSc</a> (<strong>with-petsc</strong> branch)
+          <li>Native time-integration scheme</li>
+          <ul>
+          <li>Low Storage RK3 for convective term</li>
+          <li>Trapezoidal for viscous terms</li>
+          </ul>
+        </ul>
+        <li>Additional features</li>
+        <ul>
+          <li>Option to discretize flux in conservative or non-conservative form</li>
+          <li>Immersed boundary methodology to treat solid objects in flow (STL geometry needed as input)</li>
+          <li>(PETSc only) Use custom RK or ARKIMEX scheme by registering its Butcher tableaux</li>
+        </ul>
+        <li>Serial as well as parallel (MPI)</li>
+        <ul></ul>
+
+        <h4>Compiling</h4>
+        <p></p>
+        <p>
+        The following steps should compile the code (the default prefix is the source folder
+        itself, so the binary will be installed in <em>ibcartins3d/bin</em>):
+          <h6> autoreconf -i</h6>
+          This will generate the required files for:<br>
+          <h6> [CFLAGS="..."] ./configure [--with-mpidir=/path/to/mpi] [--prefix=/install/dir]</h6>
+          <h6> make</h6>
+          <h6> make install</h6>
+          <br>
+          ** A serial version can be compiled using the "-Dserial" compile flag.<br>
+          ** If MPI is unavailable or the configure script is unable to detect MPI, then a 
+             serial version of the code will get compiled.<br>
+        </p>
+
+        <p>
+        <strong>Compiling with PETSc</strong> - for the <strong>with-petsc</strong> branch:
+        <li>Install <a href="http://www.mcs.anl.gov/petsc/", target=blank>PETSc</a> <strong>(See below)</strong></li>
+        <li>Define the variables <strong>PETSC_DIR=/path/to/petsc</strong> and <strong>PETSC_ARCH</strong> (architecture/build)</li>
+        <li>Compile with the usual steps (the configure script will automatically detect these
+            variables and decide whether to compile with PETSc interface).</li>
+        <br>
+        ** It is preferable to use the same MPI compiler for building PETSc and this code.<br>
+        ** If the variables PETSC_DIR and PETSC_ARCH are not defined in the environment,
+           the code will get compiled without PETSc time-integration.<br>
+        </p>
+
+        <p>
+        <a href="petsc.html"><strong>PETSc Installation</strong></a><br>
+        The code uses some PETSc features that are *NOT* available yet in the official release. See <a href="petsc.html"><strong>here</strong></a> for instructions to download and install PETSc.
+        </p>
+
+        <h4>Running</h4>
+        <p></p>
+        <p>
+          <h6> [/path/to/mpi/bin/]mpiexec -n $NPROC /path/to/IBCARTINS3D</h6>
+          Note: $NPROC needs to be equal to the product of the "iproc" entries in the input
+          file "solver.inp".<br>
+          <br>
+          See the README file in the source for a list of required input files and their explanations.<br>
+        </p>
+
+        <h4>Examples</h4>
+        <p></p>
+        <p>
+        The folder <em>run/</em> contains several examples with all the input files
+        required to run a case.
+        </p>
+
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+
+        <h3>IBCartINS3D</h3>
+        <li><a href="ibcartins3d.html">Overview</a></li>
+        <li><a href="https://bitbucket.org/deboghosh/ibcartins3d/src", target="blank">View Source</a></li>
+        <p></p>
+
+        <h3>Examples</h3>
+        Coming Soon!
+        <p></p>
+
+				<h3>Quick Links</h3>
+				<li><a href="hypar.html">HyPar</a></li>
+				<li><a href="ibcartins3d.html">IBCartINS3D</a></li>
+				<li><a href="tridiaglu.html">TridiagLU</a></li>
+        <p></p>
+        <h3>Misc</h3>
+        <br>
+        <a href="petsc.html">PETSc Installation</a><br><br>
+        Overture Installation
+        <li><a href="overture_fusion.html">LCRC Clusters</a></li>
+        <li><a href="overture_mcslinux.html">Linux Desktop</a></li>
+        <p></p>
+        <p><a href="https://bitbucket.org/deboghosh", target="blank">My Bitbucket profile</a></p>
+	</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Debojyoti Ghosh, Postdoctoral Research Associate, MCS Division, Argonne National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+</div>
+<!-- end #footer -->
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8725416; 
+var sc_invisible=1; 
+var sc_security="0c597bb9"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8725416/0/0c597bb9/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

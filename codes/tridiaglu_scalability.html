@@ -1,0 +1,194 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Debojyoti Ghosh - Research</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet" type="text/css" />
+<link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../resume.html">Resume</a></li>
+			<li><a href="../publications.html">Publications</a></li>
+			<li><a href="../research.html">Research</a></li>
+			<li class="current_page_item"><a href="../misc.html">Codes/Misc</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+</div>
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#"><span>Debojyoti Ghosh</span></a></h1>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+						
+				<h3>TridiagLU Scalability</h3>
+        <p></p> 
+
+        <p>
+        The following strong scalability results were obtained on <a href="https://www.alcf.anl.gov/vesta", target="blank"><strong>Vesta</strong></a> (Blue Gene/Q) at the <a href="http://www.alcf.anl.gov", target="blank">Argonne Leadership Computing Facility</a> - 2048 nodes, each node has a 1600 Mhz PowerPC A2 processor with 16 cores (32,768 cores).<br></p>
+        <p><strong>Note</strong>: The results here are most likely the "best possible". They were obtained when the number of other users of the cluster was minimal.
+
+        <p>
+        Explanation of stages in the following figures:
+        <ul>
+        <li>Stage 1: Independent elimination of interior points (perfectly scalable)</li>
+        <li>Stage 2: Elimination of non-zeros created by stage 1 that leads to the formation of the reduced system (requires one one-way communication, followed by independent computations)</li>
+        <li>Stage 3: Solution of the reduced system - the reduced system is of size <em>nproc</em> and each processor has one element of the system. Thus, this stage has a tight coupling between processors if solved directly.</li>
+        <li>Stage 4: Independent back-substitution at the interior points (perfectly scalable)</li>
+        </ul>
+        </p>
+
+        <h4>Example: tridiagLU() with tridiagIterJacobi() (Jacobi method) for reduced systems </h4>
+        <p></p>
+        <p>
+        <br>
+        <li>Total size of system: 1,048,576</li>
+        <li>Number of systems: 1</li>
+        <li>Number of solves for walltime measurement: 1</li>
+        <li>Scalable up to: ~512 processors</li>
+        <a href="files/tridiaglu_scalability_001m_jac.png"><img style="position:absolute; left:800px; top:500px" src="files/tridiaglu_scalability_001m_jac.png" width="250"></a>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+        <li>Total size of system: 16,777,216</li>
+        <li>Number of systems: 1</li>
+        <li>Number of solves for walltime measurement: 1</li>
+        <li>Scalable up to: ~8,192 processors</li>
+        <a href="files/tridiaglu_scalability_016m_jac.png"><img style="position:absolute; left:800px; top:690px" src="files/tridiaglu_scalability_016m_jac.png" width="250"></a>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+        <li>Total size of system: 268,435,456</li>
+        <li>Number of systems: 1</li>
+        <li>Number of solves for walltime measurement: 1</li>
+        <li>Scalable up to: >16,384 processors</li>
+        <a href="files/tridiaglu_scalability_260m_jac.png"><img style="position:absolute; left:800px; top:890px" src="files/tridiaglu_scalability_260m_jac.png" width="250"></a>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h4>Example: tridiagLU() with tridiagLUGS() (Gather-and-Solve method) for reduced systems </h4>
+        <p></p>
+        <p>
+        <br>
+        <li>Total size of system: 1,048,576</li>
+        <li>Number of systems: 1</li>
+        <li>Number of solves for walltime measurement: 1</li>
+        <li>Scalable up to: ~64 processors</li>
+        <a href="files/tridiaglu_scalability_001m_gs.png"><img style="position:absolute; left:800px; top:1150px" src="files/tridiaglu_scalability_001m_gs.png" width="250"></a>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+        <li>Total size of system: 16,777,216</li>
+        <li>Number of systems: 1</li>
+        <li>Number of solves for walltime measurement: 1</li>
+        <li>Scalable up to: ~1,024 processors</li>
+        <a href="files/tridiaglu_scalability_016m_gs.png"><img style="position:absolute; left:800px; top:1340px" src="files/tridiaglu_scalability_016m_gs.png" width="250"></a>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+        <li>Total size of system: 268,435,456</li>
+        <li>Number of systems: 1</li>
+        <li>Number of solves for walltime measurement: 1</li>
+        <li>Scalable up to: ~2,048 processors</li>
+        <a href="files/tridiaglu_scalability_260m_gs.png"><img style="position:absolute; left:800px; top:1540px" src="files/tridiaglu_scalability_260m_gs.png" width="250"></a>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+
+        <h3>TridiagLU</h3>
+        <li><a href="tridiaglu.html">Overview</a></li>
+        <li><a href="https://bitbucket.org/deboghosh/tridiaglu/src", target="blank">View Source</a></li>
+        <p></p>
+
+        <h3>Results</h3>
+        <li><a href="tridiaglu_scalability.html">Scalability</a></li>
+        <p></p>
+
+				<h3>Quick Links</h3>
+				<li><a href="hypar.html">HyPar</a></li>
+				<li><a href="ibcartins3d.html">IBCartINS3D</a></li>
+				<li><a href="tridiaglu.html">TridiagLU</a></li>
+        <p></p>
+        <h3>Misc</h3>
+        <br>
+        <a href="petsc.html">PETSc Installation</a><br><br>
+        Overture Installation
+        <li><a href="overture_fusion.html">LCRC Clusters</a></li>
+        <li><a href="overture_mcslinux.html">Linux Desktop</a></li>
+        <p></p>
+        <p><a href="https://bitbucket.org/deboghosh", target="blank">My Bitbucket profile</a></p>
+	</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Debojyoti Ghosh, Postdoctoral Research Associate, MCS Division, Argonne National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+</div>
+<!-- end #footer -->
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8725416; 
+var sc_invisible=1; 
+var sc_security="0c597bb9"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8725416/0/0c597bb9/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

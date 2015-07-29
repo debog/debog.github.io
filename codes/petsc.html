@@ -1,0 +1,144 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Debojyoti Ghosh - Research</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet" type="text/css" />
+<link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../resume.html">Resume</a></li>
+			<li><a href="../publications.html">Publications</a></li>
+			<li><a href="../research.html">Research</a></li>
+			<li class="current_page_item"><a href="../misc.html">Codes/Misc</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+</div>
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#"><span>Debojyoti Ghosh</span></a></h1>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+						
+				<h3>PETSc Installation</h3>
+        <p></p>
+        <p>PETSc (Portable, Extensible Toolkit for Scientific Computing) is a library of scalable linear and non-linear equation solvers and ODE solvers, developed and maintained at the Mathematics & Computer Science Division at Argonne National Laboratory. The <a href="http://www.mcs.anl.gov/petsc", target=blank><strong>official webpage of PETSc</strong></a> provides the download and installation instructions, as well as extensive documentation. Most of the codes here use the <a href="http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/TS/index.html", target=blank>TS module</a> of PETsc for advanced high-order time-integration schemes and it will be useful to briefly go through the documentation for this module to understand and utilize them:
+        <li><a href="http://www.mcs.anl.gov/petsc/petsc-current/docs/manual.pdf", target=blank>User Manual</a> (PDF) (Chapter 6 - TS: Scalable ODE and DAE Solvers)</li>
+        <li><a href="http://www.mcs.anl.gov/petsc/petsc-current/src/ts/examples/tutorials/index.html", target=blank>TS Examples</a></li>
+        <br>
+        To download the official or development releases of PETSc, go <a href="http://www.mcs.anl.gov/petsc/download/index.html">here</a>.
+        </p>
+        <p>Complete installation instructions, including all options, are available <a href="http://www.mcs.anl.gov/petsc/documentation/installation.html", target=blank><strong>here</strong></a>. This page contains brief instructions that I find useful to quickly download and install PETSc to use with the codes I am working with.</p>
+
+        <h4>Download</h4>
+        <p></p>
+        <p>With Bitbucket account and SSH keys set up:
+        <h6>git clone  <a href="git@bitbucket.org:petsc/petsc.git", target=blank>git@bitbucket.org:petsc/petsc.git</a></h6>
+        </p>
+        <p>Otherwise:
+        <h6>git clone  <a href="https://bitbucket.org/petsc/petsc.git", target=blank>https://bitbucket.org/petsc/petsc.git</a></h6>
+        </p>
+        The branch <strong>master</strong> should be compiled and used, unless some feature that is needed is on some other branch. Visit <a href="https://bitbucket.org/petsc/petsc", target=blank>PETSC's Bitbucket page</a> for details of branches, commits, etc.
+        </p>
+
+        <h4>Installation</h4>
+        <p></p>
+        <p>The following steps should install PETSc:
+        <li>Set environment variables <strong>PETSC_DIR</strong> and <strong>PETSC_ARCH</strong> (Can be set in .bashrc too)</li>
+        <ul>
+          <h6>export PETSC_DIR=/path/to/petsc/ (Eg. PETSC_DIR=/home/ghosh/petsc)</h6>
+          <h6>export PETSC_ARCH=(name of build) (Eg. arch-debug or arch-opt. It can be anything)</h6>
+        </ul>
+        <li>Move to the PETSc directory (cd $PETSC_DIR)</li><br>
+        <li>Configure with options for <strong>debug</strong> (slow) or <strong>optimized</strong> (fast) <br>
+            Example: If GNU compilers exist but PETSc needs to download and compile MPICH,
+        <ul>
+          <h6>./configure --with-cc=gcc --with-fc=gfortran --download-mpich=1 --with-shared-libraries --<u>with-debugging=1</u> (debug)</h6>
+          <h6>./configure --with-cc=gcc --with-fc=gfortran --download-mpich=1 --with-shared-libraries --<u>with-debugging=0</u> (optimized)</h6>
+        </ul>
+            Example: If MPICH already exists and PETSc needs to use that,
+        <ul>
+          <h6>./configure --with-cc=mpicc --with-fc=mpif90 -with-cxx=mpicxx --with-shared-libraries --<u>with-debugging=1</u> (debug)</h6>
+          <h6>./configure --with-cc=mpicc --with-fc=mpif90 -with-cxx=mpicxx --with-shared-libraries --<u>with-debugging=0</u> (optimized)</h6>
+        </ul>
+        Note: PETSc can download and compile additional packages by adding <em><strong>--download-packagename=yes</strong></em> or use existing installations of those packages <em><strong>--with-packagename-include=/path/to/package/include</strong></em> and <em><strong>--with-packagename-lib=/path/to/package/lib</strong></em> or <em><strong>--with-packagename-dir=/path/to/package/</strong></em> (use <em><strong>--help</strong></em> to see a list of these options and packages that PETSc can download). <a href="http://www.mcs.anl.gov/~emconsta/Projects_HighOrderIMEX.php", target=blank><strong>This page</strong></a> has examples of installing PETSc with downloading or using existing installations of <a href="http://www.hdfgroup.org/HDF5/", target=blank>HDF5</a>, <a href="http://www.unidata.ucar.edu/software/netcdf/", target=blank>NetCDF</a> and <a href="http://glaros.dtc.umn.edu/gkhome/metis/metis/overview", target=blank>METIS</a> packages.
+        </li><br>
+        <li> Compilation
+        <ul>
+          <h6>make all</h6>
+          <h6>make test</h6>
+        </ul><br>
+        </p>
+
+        <h4>Some machine specific configure commands</h4>
+        <p></p>
+        <li><a href="https://www.alcf.anl.gov/vesta", target=blank><strong>Vesta</strong></a>/<a href="https://www.alcf.anl.gov/mira", target=blank><strong>Mira</strong></a> (<a href="http://www.alcf.anl.gov/", target=blank>ALCF</a> IBM BG/Q)</li>
+        <h6>./configure CC=`which mpicc` CXX=`which mpicxx` FC=`which mpif90` --with-blas-lapack-lib="-L/soft/libraries/alcf/current/gcc/LAPACK/lib -llapack -L/soft/libraries/alcf/current/gcc/BLAS/lib -lblas" --with-shared-libraries=0</h6>
+        <p></p>
+        <li><a href="http://www.lcrc.anl.gov/fusion/", target=blank><strong>Fusion</strong></a> (<a href="http://www.lcrc.anl.gov/", target=blank>LCRC</a>)</li>
+        <h6>./configure --with-mpi-dir=/soft/mvapich2/1.4.1-intel-11.1.064 --with-shared-libraries=0</h6>
+
+
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+
+				<h3>Quick Links</h3>
+				<li><a href="hypar.html">HyPar</a></li>
+				<li><a href="ibcartins3d.html">IBCartINS3D</a></li>
+				<li><a href="tridiaglu.html">TridiagLU</a></li>
+        <p></p>
+        <h3>Misc</h3>
+        <br>
+        <a href="petsc.html">PETSc Installation</a><br><br>
+        Overture Installation
+        <li><a href="overture_fusion.html">LCRC Clusters</a></li>
+        <li><a href="overture_mcslinux.html">Linux Desktop</a> </li>
+        <p></p>
+        <p><a href="https://bitbucket.org/deboghosh", target="blank">My Bitbucket profile</a></p>
+	</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Debojyoti Ghosh, Postdoctoral Research Associate, MCS Division, Argonne National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+</div>
+<!-- end #footer -->
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8725416; 
+var sc_invisible=1; 
+var sc_security="0c597bb9"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8725416/0/0c597bb9/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
