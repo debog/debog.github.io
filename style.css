@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #FFFFFF;
-	font-family: Times, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	color: #3B3B3B;
 }
@@ -18,7 +18,7 @@ h1, h2, h3 {
 	margin: 0px;
 	padding: 0px;
 	letter-spacing: -1px;
-	font-family: Times, serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	color: #3B3B3B;
 }
@@ -27,7 +27,7 @@ h1, h2, h3 {
 h4 {
 	margin: 0px;
 	padding: 0px;
-	font-family: Times, serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	color: #3B3B3B;
 }
@@ -35,7 +35,7 @@ h4 {
 h5 {
 	margin: 0px;
 	padding: 0px;
-	font-family: Times, serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	color: #3B3B3B;
 }
@@ -43,7 +43,7 @@ h5 {
 h6 {
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Courier', serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	color: #3B3B3B;
 }
@@ -86,11 +86,11 @@ h6 {
 }
 p, ul, ol {
 	margin-top: 0;
-	line-height: 140%;
+	line-height: 150%;
 }
 
 li {
-	line-height: 140%;
+	line-height: 150%;
 	margin-top: 0;
 }
 
@@ -150,7 +150,7 @@ a:hover {
 	margin: 0px;
 	padding: 0px;
 	text-transform: uppercase;
-	font-family: Times, serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #3B3B3B;
 }
 
@@ -200,7 +200,7 @@ a:hover {
 	text-decoration: none;
 	text-align: center;
 	text-transform: lowercase;
-	font-family: Times, serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	color: #3B3B3B;
 	border: none;
@@ -219,16 +219,17 @@ a:hover {
 
 #page {
 	overflow: hidden;
-	width: 1000px;
+	width: 1100px;
 	margin: 0px auto;
 	padding: 30px 0px;
+	text-align: justify;
 }
 
 /* Content */
 
 #content {
 	float: right;
-	width: 750px;
+	width: 850px;
 }
 
 #content ul {
@@ -392,7 +393,7 @@ a:hover {
 	padding: 0px 0 15px 0;
 	background: #F4F4F4;
 	border-top: 1px solid #010101;
-	font-family: Times, serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #footer p {
