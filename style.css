@@ -41,11 +41,11 @@ h5 {
 }
 
 h6 {
-	margin: 0px;
+	margin: 20px;
 	padding: 0px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Courier New', courier;
 	font-weight: normal;
-	color: #3B3B3B;
+	color: #000000;
 }
 
 h1 {
