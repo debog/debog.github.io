@@ -59,9 +59,9 @@ h2 {
 h3 {
 	font-weight: bold;
 	font-size: 1.1em;
-	line-height: 180%;
+	line-height: 200%;
 	letter-spacing: 0.3px;
-	background-color: #EEEEEE;
+	background-color: #FFFFFF;
 	border-bottom: 1px solid #010101;
 
 }
@@ -69,8 +69,9 @@ h3 {
 h4 {
 	font-weight: bold;
 	font-size: 1.0em;
-	line-height: 140%;
-	background-color: #EEEEEE;
+	line-height: 180%;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #010101;
 }
 
 h5 {
@@ -117,7 +118,7 @@ a:hover {
 
 #header {
 	clear: both;
-	width: 1100px;
+	width: 1000px;
 	height: 70px;
 	margin: 0px auto;
 }
@@ -174,7 +175,7 @@ a:hover {
 }
 
 #menu {
-	width: 1100px;
+	width: 1000px;
 	height: 55px;
 	margin: 0px auto;
 	padding: 0px;
@@ -219,7 +220,7 @@ a:hover {
 
 #page {
 	overflow: hidden;
-	width: 1100px;
+	width: 1000px;
 	margin: 0px auto;
 	padding: 30px 0px;
 	text-align: justify;
@@ -229,7 +230,7 @@ a:hover {
 
 #content {
 	float: right;
-	width: 850px;
+	width: 750px;
 }
 
 #content ul {
@@ -391,7 +392,7 @@ a:hover {
 	height: 30px;
 	margin: 0 auto;
 	padding: 0px 0 15px 0;
-	background: #F4F4F4;
+	background: #FFFFFF;
 	border-top: 1px solid #010101;
 	font-family: 'Open Sans', sans-serif;
 }
