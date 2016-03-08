@@ -37,7 +37,7 @@
 						
 				<h3>PETSc Installation</h3>
         <p></p>
-        <p>PETSc (Portable, Extensible Toolkit for Scientific Computing) is a library of scalable linear and non-linear equation solvers and ODE solvers, developed and maintained at the Mathematics & Computer Science Division at Argonne National Laboratory. The <a href="http://www.mcs.anl.gov/petsc", target=blank><strong>official webpage of PETSc</strong></a> provides the download and installation instructions, as well as extensive documentation. Most of the codes here use the <a href="http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/TS/index.html", target=blank>TS module</a> of PETsc for advanced high-order time-integration schemes and it will be useful to briefly go through the documentation for this module to understand and utilize them:
+        <p>PETSc (Portable, Extensible Toolkit for Scientific Computing) is a library of scalable linear and non-linear equation solvers and ODE solvers, developed and maintained at the Mathematics & Computer Science Division at Argonne National Laboratory. The <a href="http://www.mcs.anl.gov/petsc", target=blank><strong>official webpage of PETSc</strong></a> provides the download and installation instructions, as well as extensive documentation. Most of the codes I work with use the <a href="http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/TS/index.html", target=blank>TS module</a> of PETsc for advanced high-order time-integration schemes and it will be useful to briefly go through the documentation for this module to understand and utilize them:
         <li><a href="http://www.mcs.anl.gov/petsc/petsc-current/docs/manual.pdf", target=blank>User Manual</a> (PDF) (Chapter 6 - TS: Scalable ODE and DAE Solvers)</li>
         <li><a href="http://www.mcs.anl.gov/petsc/petsc-current/src/ts/examples/tutorials/index.html", target=blank>TS Examples</a></li>
         <br>
@@ -92,6 +92,10 @@
         <p></p>
         <li><a href="http://www.lcrc.anl.gov/fusion/", target=blank><strong>Fusion</strong></a> (<a href="http://www.lcrc.anl.gov/", target=blank>LCRC</a>)</li>
         <h6>./configure --with-mpi-dir=/soft/mvapich2/1.4.1-intel-11.1.064 --with-shared-libraries=0</h6>
+        <li><a href="https://computing.llnl.gov/?set=resources&page=OCF_resources#cab", target=blank><strong>Cab</strong></a> (With <a href="http://acts.nersc.gov/hypre/", target=blank>Hypre</a> and <a href="http://crd-legacy.lbl.gov/~xiaoye/SuperLU/", target=blank>SuperLU</a>) </li>
+        <h6>./configure --with-cc=mpicc --with-fc=mpif90 -with-cxx=mpicxx COPTFLAGS="-O2" FOPTFLAGS="-O2" CXXOPTFLAGS="-O2" --with-shared-libraries --with-debugging=0 --download-hypre --download-superlu
+        
+        </h6>
 
 
 				</div>
@@ -120,7 +124,7 @@
 	<!-- end #page -->
 </div>
 <div id="footer">
-	<p>Debojyoti Ghosh, Postdoctoral Research Associate, MCS Division, Argonne National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+	<p>Debojyoti Ghosh, Postdoctoral Research Staff Member, Lawrence Livermore National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
 </div>
 <!-- end #footer -->
 <!-- Start of StatCounter Code for Default Guide -->
