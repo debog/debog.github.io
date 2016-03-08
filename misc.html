@@ -46,17 +46,19 @@
         <a href="codes/hypar.html"><strong>[more details]</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bitbucket.org/deboghosh/hypar", target="blank"><strong>[source]</strong></a><br>
         </p>
         <br>
+				<h4><a href="http://tridiaglu.github.io/">TridiagLU</a></h4>
+        <p>
+        Parallel (MPI) solvers for non-periodic tridiagonal systems of equations: Contains functions to solve distributed tridiagonal systems. The parallel LU solver uses the iterative substructuring 
+        method, with the reduced system being solved directly ("gather-and-solve" + LU) or iteratively (point Jacobi). The functions are written to solve several systems of equations with one call 
+        (the systems need not share a common left- or right-hand-sides). A test suite is also provided to test the solvers and measure their wall times.
+        <br><strong>Dependencies</strong>: MPICH (if not available, a serial version is compiled)<br>
+        <a href="http://tridiaglu.github.io/"><strong>[Documentation]</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bitbucket.org/deboghosh/tridiaglu", target="blank"><strong>[Source]</strong></a><br>
+        </p>
+        <br>
 				<h4><a href="codes/ibcartins3d.html">IBCartINS3D</a></h4>
         <p>A 3D, Cartesian, incompressible Navier-Stokes solver with immersed boundary technique: The code is based on the fractional-step method and uses a higher-order upwind reconstruction schemes for the convection term and a second-order central discretization for the viscous and pressure correction terms. The viscous terms are treated using implicit time-integration and convection is treated explicitly. The parallel version uses a 3D, Cartesian domain decomposition. The code can also be compiled with <a href="http://www.mcs.anl.gov/petsc/", target="blank"><strong>PETSc</strong></a> to use the time-integration methods provided by its <a href="http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/TS/index.html", target="blank"><strong>TS</strong></a> module. </li>
         <br><strong>Dependencies</strong>: MPICH (if not available, a serial version is compiled), PETSc (optional)<br>
         <a href="codes/ibcartins3d.html"><strong>[more details]</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bitbucket.org/deboghosh/ibcartins3d", target="blank"><strong>[source]</strong></a><br>
-        </p>
-        <br>
-				<h4><a href="codes/tridiaglu.html">TridiagLU</a></h4>
-        <p>
-        Serial and parallel (MPI) algorithms for the direct solution (LU decomposition) of non-periodic tridiagonal systems of equations: Two functions are available, one utilizing the recursive-doubling algorithm and the other solves the system in parallel by rearranging the points adjacent to the sub-domain boundaries. The latter algorithm uses the recursive-doubling or gather-and-solve algorithms to solve the reduced system resulting from the rearrangement. These functions can solve a single system as well as a stack of systems. A code is also provided to test the functions as well as their walltimes. </li>
-        <br><strong>Dependencies</strong>: MPICH (if not available, a serial version is compiled)<br>
-        <a href="codes/tridiaglu.html"><strong>[more details]</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bitbucket.org/deboghosh/tridiaglu", target="blank"><strong>[source]</strong></a><br>
         </p>
 
 				</div>
@@ -65,8 +67,8 @@
 
 				<h3>Quick Links</h3>
 				<li><a href="codes/hypar.html">HyPar</a></li>
+				<li><a href="http://tridiaglu.github.io/">TridiagLU</a></li>
 				<li><a href="codes/ibcartins3d.html">IBCartINS3D</a></li>
-				<li><a href="codes/tridiaglu.html">TridiagLU</a></li>
         <p></p>
         <h3>Misc</h3>
         <br>
