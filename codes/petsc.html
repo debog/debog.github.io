@@ -43,20 +43,14 @@
         <li><a href="http://www.mcs.anl.gov/petsc/petsc-current/docs/manual.pdf", target=blank>User Manual</a> (PDF) (Chapter 6 - TS: Scalable ODE and DAE Solvers)</li>
         <li><a href="http://www.mcs.anl.gov/petsc/petsc-current/src/ts/examples/tutorials/index.html", target=blank>TS Examples</a></li>
         <br>
-        To download the official or development releases of PETSc, go <a href="http://www.mcs.anl.gov/petsc/download/index.html">here</a>.
+        To download the official or development releases of PETSc, go <a href="http://www.mcs.anl.gov/petsc/download/index.html", target="blank">here</a>.
         </p>
         <p>Complete installation instructions, including all options, are available <a href="http://www.mcs.anl.gov/petsc/documentation/installation.html", target=blank><strong>here</strong></a>. This page contains brief instructions that I find useful to quickly download and install PETSc to use with the codes I am working with.</p>
 
         <h4>Download</h4>
         <p></p>
-        <p>With Bitbucket account and SSH keys set up:
-        <h6>git clone  <a href="git@bitbucket.org:petsc/petsc.git", target=blank>git@bitbucket.org:petsc/petsc.git</a></h6>
-        </p>
-        <p>Otherwise:
-        <h6>git clone  <a href="https://bitbucket.org/petsc/petsc.git", target=blank>https://bitbucket.org/petsc/petsc.git</a></h6>
-        </p>
-        The branch <strong>master</strong> should be compiled and used, unless some feature that is needed is on some other branch. Visit <a href="https://bitbucket.org/petsc/petsc", target=blank>PETSC's Bitbucket page</a> for details of branches, commits, etc.
-        </p>
+        <h6>git clone -b release  <a href="https://gitlab.com/petsc/petsc.git", target=blank>https://gitlab.com/petsc/petsc.git</a> petsc</h6>
+        <p></p>
 
         <h4>Installation</h4>
         <p></p>
@@ -82,18 +76,12 @@
         </li><br>
         <li> Compilation
         <ul>
-          <h6>make all</h6>
-          <h6>make test</h6>
+          <h6>make all check</h6>
         </ul><br>
         </p>
 
         <h4>Some machine specific configure commands</h4>
         <p></p>
-        <li><a href="https://www.alcf.anl.gov/vesta", target=blank><strong>Vesta</strong></a>/<a href="https://www.alcf.anl.gov/mira", target=blank><strong>Mira</strong></a> (<a href="http://www.alcf.anl.gov/", target=blank>ALCF</a> IBM BG/Q)</li>
-        <h6>./configure CC=`which mpicc` CXX=`which mpicxx` FC=`which mpif90` --with-blas-lapack-lib="-L/soft/libraries/alcf/current/gcc/LAPACK/lib -llapack -L/soft/libraries/alcf/current/gcc/BLAS/lib -lblas" --with-shared-libraries=0</h6>
-        <p></p>
-        <li><a href="http://www.lcrc.anl.gov/fusion/", target=blank><strong>Fusion</strong></a> (<a href="http://www.lcrc.anl.gov/", target=blank>LCRC</a>)</li>
-        <h6>./configure --with-mpi-dir=/soft/mvapich2/1.4.1-intel-11.1.064 --with-shared-libraries=0</h6>
         <li><a href="https://hpc.llnl.gov/hardware/platforms/Quartz", target=blank><strong>Quartz</strong></a> (With <a href="http://glaros.dtc.umn.edu/gkhome/metis/parmetis/overview", target=blank>ParMETIS</a>, <a href="http://acts.nersc.gov/hypre/", target=blank>Hypre</a> and <a href="http://crd-legacy.lbl.gov/~xiaoye/SuperLU/", target=blank>SuperLU</a>) </li>
         <h6>./configure --with-cc=mpicc --with-fc=mpif90 -with-cxx=mpicxx COPTFLAGS="-O2" FOPTFLAGS="-O2" CXXOPTFLAGS="-O2" --with-shared-libraries --with-debugging=0 --download-metis --download-parmetis --download-hypre --download-superlu --download-superlu_dist --with-cxx-dialect=C++11</h6>
 
@@ -124,7 +112,7 @@
 	<!-- end #page -->
 </div>
 <div id="footer">
-	<p>Debojyoti Ghosh, Postdoctoral Research Staff Member, Lawrence Livermore National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+	<p>Debojyoti Ghosh, Computational Scientist, Lawrence Livermore National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
 </div>
 <!-- end #footer -->
 <!-- Start of StatCounter Code for Default Guide -->
