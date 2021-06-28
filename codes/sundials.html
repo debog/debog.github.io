@@ -1,0 +1,132 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Debojyoti Ghosh - Research</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet" type="text/css" />
+<link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../resume.html">Resume</a></li>
+			<li><a href="../publications.html">Publications</a></li>
+			<li><a href="../research.html">Research</a></li>
+			<li class="current_page_item"><a href="../codes.html">Codes</a></li>
+			<li><a href="../misc.html">Misc</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+</div>
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#"><span>Debojyoti Ghosh</span></a></h1>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+						
+				<h3>SUNDIALS Installation</h3>
+        <p></p>
+        <p>SUNDIALS a library of linear and non-linear equation solvers and ODE solvers, developed and maintained at the Center for Applied Scientific Computing, Lawrence Livermore National Laboratory. The <a href="https://computing.llnl.gov/projects/sundials", target=blank><strong>official webpage of PETSc</strong></a> and the <a href="https://github.com/LLNL/sundials", target="blank">repository</a>  has the documentation. This page has quick instructions to download and install it.
+
+        <h4>Download</h4>
+        <p></p>
+        <h6>git clone <a href="https://github.com/LLNL/sundials.git", target=blank>https://github.com/LLNL/sundials.git</a> sundials</h6>
+        <p></p>
+
+        <h4>Installation</h4>
+        <p></p>
+        <p>The following steps should install SUNDIALS:
+        <li>Set environment variables <strong>SUNDIALS_DIR</strong> (Can be set in .bashrc too)</li>
+        <ul>
+          <h6>export SUNDIALS_DIR=/path/to/sundials/ (Eg. SUNDIALS_DIR=/home/ghosh/sundials)</h6>
+        </ul>
+        <li>Go to the SUNDIALS directory (cd $SUNDIALS_DIR)</li><br>
+        <li>Create build and install subdirectories:
+        <ul>
+          <h6>mkdir build && mkdir install<br>
+          cd build</h6>
+        </ul> </li>
+        <li>Compile and install<br>
+        <ul>
+          <h6>cmake &nbsp;-DCMAKE_INSTALL_PREFIX=../install \<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DENABLE_MPI=ON \<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DMPI_C_COMPILER=mpicc \<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DMPI_CXX_COMPILER=mpicxx ../ <br>
+          make install</h6>
+        </ul>
+        </li><br>
+
+        <h4>Linking to SUNDIALS</h4>
+        <p></p>
+        <li>Include flags:
+        <h6>-I$(SUNDIALS_DIR)/install/include</h6>
+        </li>
+        <li>Linker flags (for ARKODE with parallel vectors):
+        <ul>
+        <h6>-L$(SUNDIALS_DIR)/install/lib \<br>
+        -L$(SUNDIALS_DIR)/install/lib64 \<br>
+        -lsundials_arkode \<br>
+        -lsundials_nvecparallel</h6>
+        </ul>
+        See SUNDIALS documentation for the appropriate linker flags for other packages.
+        </li>
+
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+
+				<h3>Quick Links</h3>
+				<li><a href="hypar.html">HyPar</a></li>
+				<li><a href="http://tridiaglu.github.io/">TridiagLU</a></li>
+				<li><a href="ibcartins3d.html">IBCartINS3D</a></li>
+        <p></p>
+        <h3>Misc</h3>
+        <br>
+        <a href="petsc.html">PETSc Installation</a><br>
+        <a href="sundials.html">SUNDIALS Installation</a><br>
+        <p></p>
+        <p><a href="https://bitbucket.org/deboghosh", target="blank">My Bitbucket profile</a></p>
+	</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Debojyoti Ghosh, Computational Scientist, Lawrence Livermore National Laboratory. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+</div>
+<!-- end #footer -->
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8725416; 
+var sc_invisible=1; 
+var sc_security="0c597bb9"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8725416/0/0c597bb9/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
