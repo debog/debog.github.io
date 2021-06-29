@@ -39,7 +39,7 @@
 						
 				<h3>SUNDIALS Installation</h3>
         <p></p>
-        <p>SUNDIALS a library of linear and non-linear equation solvers and ODE solvers, developed and maintained at the Center for Applied Scientific Computing, Lawrence Livermore National Laboratory. The <a href="https://computing.llnl.gov/projects/sundials", target=blank><strong>official webpage of PETSc</strong></a> and the <a href="https://github.com/LLNL/sundials", target="blank">repository</a>  has the documentation. This page has quick instructions to download and install it.
+        <p>SUNDIALS a library of linear and non-linear equation solvers and ODE solvers, developed and maintained at the Center for Applied Scientific Computing, Lawrence Livermore National Laboratory. The <a href="https://computing.llnl.gov/projects/sundials", target=blank><strong>official webpage of SUNDIALS</strong></a> and the <a href="https://github.com/LLNL/sundials", target="blank">repository</a>  has the documentation. This page has quick instructions to download and install it.
 
         <h4>Download</h4>
         <p></p>
@@ -61,10 +61,12 @@
         </ul> </li>
         <li>Compile and install<br>
         <ul>
-          <h6>cmake &nbsp;-DCMAKE_INSTALL_PREFIX=../install \<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DENABLE_MPI=ON \<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DMPI_C_COMPILER=mpicc \<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DMPI_CXX_COMPILER=mpicxx ../ <br>
+          <h6>cmake -DCMAKE_INSTALL_PREFIX=../install \<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DENABLE_MPI=ON \<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DMPI_C_COMPILER=mpicc \<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DMPI_CXX_COMPILER=mpicxx \<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DCMAKE_C_FLAGS='-O3' \<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-DSUNDIALS_BUILD_WITH_MONITORING=ON ../<br>
           make install</h6>
         </ul>
         </li><br>
