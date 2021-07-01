@@ -49,11 +49,7 @@
         <h4>Installation</h4>
         <p></p>
         <p>The following steps should install SUNDIALS:
-        <li>Set environment variables <strong>SUNDIALS_DIR</strong> (Can be set in .bashrc too)</li>
-        <ul>
-          <h6>export SUNDIALS_DIR=/path/to/sundials/ (Eg. SUNDIALS_DIR=/home/ghosh/sundials)</h6>
-        </ul>
-        <li>Go to the SUNDIALS directory (cd $SUNDIALS_DIR)</li><br>
+        <li>Go to the SUNDIALS directory</li><br>
         <li>Create build and install subdirectories:
         <ul>
           <h6>mkdir build && mkdir install<br>
@@ -73,13 +69,19 @@
 
         <h4>Linking to SUNDIALS</h4>
         <p></p>
+        <li>Set environment variable <strong>SUNDIALS_DIR</strong> (Can be set in .bashrc too)
+        <ul>
+          <h6>export SUNDIALS_DIR=/path/to/sundials/install<br> 
+          (Eg. SUNDIALS_DIR=/home/ghosh/sundials/install)</h6>
+        </ul>
+        </li>
         <li>Include flags:
-        <h6>-I$(SUNDIALS_DIR)/install/include</h6>
+        <h6>-I$(SUNDIALS_DIR)/include</h6>
         </li>
         <li>Linker flags (for ARKODE with parallel vectors):
         <ul>
-        <h6>-L$(SUNDIALS_DIR)/install/lib \<br>
-        -L$(SUNDIALS_DIR)/install/lib64 \<br>
+        <h6>-L$(SUNDIALS_DIR)/lib \<br>
+        -L$(SUNDIALS_DIR)/lib64 \<br>
         -lsundials_arkode \<br>
         -lsundials_nvecparallel</h6>
         </ul>
