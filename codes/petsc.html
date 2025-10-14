@@ -90,9 +90,25 @@
         <h6>./configure --with-batch --with-cc=mpicc --with-fc=mpif90 --with-cxx=mpicxx COPTFLAGS="-O2 -std=c99" FOPTFLAGS="-O2" CXXOPTFLAGS="-O2" --with-shared-libraries --with-debugging=0 --download-make --download-hypre --with-cxx-dialect=C++11</h6>
         <li>LLNL LC <a href="https://hpc.llnl.gov/hardware/compute-platforms/dane", target=blank><strong>Dane</strong></a> (With <a href="http://glaros.dtc.umn.edu/gkhome/metis/parmetis/overview", target=blank>ParMETIS</a>, <a href="http://acts.nersc.gov/hypre/", target=blank>Hypre</a> and <a href="http://crd-legacy.lbl.gov/~xiaoye/SuperLU/", target=blank>SuperLU</a>) </li>
         <h6>./configure --with-batch --with-cc=mpicc --with-fc=mpif90 --with-cxx=mpicxx COPTFLAGS="-O2 -std=c99" FOPTFLAGS="-O2" CXXOPTFLAGS="-O2" --with-shared-libraries --with-debugging=0 --download-make --download-cmake --download-hypre --download-superlu --download-superlu_dist --download-parmetis --download-metis --with-cxx-dialect=C++11</h6>
-        <li>LLNL LC <a href="https://hpc.llnl.gov/hardware/compute-platforms/lassen", target=blank><strong>Lassen</strong></a> (With CUDA and <a href="http://acts.nersc.gov/hypre/", target=blank>Hypre</a>) </li>
-        <h6>./configure --with-make-np=32 --with-mpiexec="lrun -T4 -M "-gpu"" --gpu-bind=none -fc=mpif90 COPTFLAGS="-g -O3" FOPTFLAGS="-g -O3" CXXOPTFLAGS="-g -O2" CUDAFLAGS="-g -O3" --with-cuda=1 --with-cuda-arch=80 --with-debugging=0 --download-hypre</h6>
+        <li>LLNL LC <a href="https://hpc.llnl.gov/hardware/compute-platforms/matrix", target=blank><strong>Matrix</strong></a> (With CUDA and <a href="http://acts.nersc.gov/hypre/", target=blank>Hypre</a>) </li>
+        <h6>module load gcc/12.1.1-magic mvapich2/2.3.7 cuda/12.2.2 cmake/3.30.5 boost/1.80.0</h6>
+        <h6>./configure --with-make-np=36 --with-mpiexec=srun -G4 --gpu-bind=none --with-batch --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpif90 COPTFLAGS="-g -O3" FOPTFLAGS="-g -O3" CXXOPTFLAGS="-g -O2" CUDAFLAGS+="-g -O3" --with-cuda=1 --with-cuda-arch=90 --with-debugging=0 --download-hypre</h6>
+        <li>LLNL LC <a href="https://hpc.llnl.gov/hardware/compute-platforms/tuolumne", target=blank><strong>Tuolumne</strong></a> (With HIP) </li>
+        <h6>module load cmake/3.24.2 rocm/6.4.0 rocmcc/6.4.0-cce-19.0.0d-magic<br>
+            export MPI_DIR=/usr/tce/packages/cray-mpich/cray-mpich-9.0.1-rocmcc-6.4.1-magic</h6>
+        <h6>./configure --with-make-np=32 --with-batch --with-mpi-dir=$MPI_DIR --with-hip-dir=$ROCM_PATH COPTFLAGS="-g -O3" FOPTFLAGS="-g -O3" CXXOPTFLAGS="-g -O2" HIPOPTFLAGS="-g -O3" --with-cuda=0 --with-hip=1 --with-clanguage=c --with-debugging=0 --download-kokkos --download-kokkos-kernels --with-fortran-bindings=0</h6>
+        Note: The following environment variable should be available after loading the modules.
+        <h6>ROCM_PATH=/opt/rocm-6.4.0</h6>
         <li>NERSC <a href="https://docs.nersc.gov/systems/perlmutter/architecture/", target=blank><strong>Perlmutter</strong></a> (With CUDA and <a href="http://acts.nersc.gov/hypre/", target=blank>Hypre</a>) </li>
+        <h6>module load gpu craype craype-x86-milan craype-accel-nvidia80 cudatoolkit cmake/3.30.2<br>
+            export CRAY_ACCEL_TARGET=nvidia80<br>
+            export CXXFLAGS="-march=znver3"<br>
+            export CFLAGS="-march=znver3"<br>
+            export CC=cc<br>
+            export CXX=CC<br>
+            export FC=ftn<br>
+            export CUDACXX=$(which nvcc)<br>
+            export CUDAHOSTCXX=CC</h6>
         <h6>./configure --with-make-np=8 --with-mpiexec=srun -G4 --gpu-bind=none --with-batch=0 --with-cc=cc --with-cxx=CC --with-fc=ftn COPTFLAGS="-g -O3" FOPTFLAGS="-g -O3" CXXOPTFLAGS="-g -O2" CUDAFLAGS="-g -O3" --with-cuda=1 --with-cuda-arch=80 --with-debugging=0 --download-hypre</h6>
 
 				</div>
