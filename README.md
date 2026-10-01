@@ -1,5 +1,8 @@
 # debog.github.io
 
+> Adding a publication? Follow
+> [UPDATING_PUBLICATIONS.md](UPDATING_PUBLICATIONS.md).
+
 Source for <https://debog.github.io>. Every `.html` file at the repository root
 (and under `codes/`) is **generated**. Do not edit them; edit the sources below
 and rebuild.
@@ -18,6 +21,7 @@ tools/render_pubs.py     publication-page renderer
 tools/layout.py          shared <head>, masthead, nav, footer
 tools/check_site.py      tag balance, dead local links, required metadata
 tools/check_links.py     external link checker
+tools/check_new_publications.py  ORCID + Crossref gap check
 Files/                   PDFs of papers, talks, resume, CV
 archive/                 superseded files, kept for reference
 ```
