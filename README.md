@@ -99,6 +99,14 @@ real signed-in browser session, and it catches items ORCID misses (conference
 abstracts, lab reports). Worth checking a couple of times a year:
 <https://scholar.google.com/citations?user=NL34xJcAAAAJ&hl=en&sortby=pubdate>
 
+## Photo gallery
+
+Each year in `content/misc.html` is a `<section class="year">` holding a
+heading and one `<ul>`. The two-column flow is applied to the `<ul>`, so a
+year's albums stay under their own heading instead of running across the
+whole gallery. Years with few entries use a single column; below roughly
+560px everything collapses to one column.
+
 ## Notes
 
 - There are no external fonts or scripts. The stylesheet is the only asset,
