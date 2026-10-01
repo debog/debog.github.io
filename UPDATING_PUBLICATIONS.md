@@ -179,6 +179,41 @@ before concluding it is missing.
 
 ---
 
+## 5.2 Full text
+
+Each entry may carry links under `links`. Find a reachable copy in this
+order, and stop at the first that works.
+
+1. **Local archive.** `~/Documents/Research_Papers/Self` holds author copies,
+   named `YYYY_FirstAuthor_EtAl_VENUE.pdf`. Copy into `Files/` and link as
+   `{label: "full text", href: "Files/<name>.pdf"}`. Check first whether it
+   is already there under a slightly different name:
+   ```
+   ls ~/Documents/Research_Papers/Self/*.pdf | xargs -n1 basename
+   ls Files/*.pdf | xargs -n1 basename
+   ```
+2. **Open access at the publisher.** Query Unpaywall; a `gold` result means
+   the DOI link already is the full text and no extra link is needed.
+   ```
+   curl -s "https://api.unpaywall.org/v2/<DOI>?email=debojyoti.ghosh@gmail.com"
+   ```
+3. **arXiv.** Search by exact title, then confirm the author list contains
+   Ghosh before linking — titles collide.
+   ```
+   curl -s 'http://export.arxiv.org/api/query?search_query=all:"<TITLE>"&max_results=5'
+   ```
+   Link as `{label: "arXiv", href: "https://arxiv.org/abs/<ID>"}`.
+4. **OSTI**, for LLNL and other DOE laboratory reports.
+   ```
+   curl -s 'https://www.osti.gov/api/v1/records?q=%22<TITLE>%22'
+   ```
+   Link as `{label: "OSTI", href: "https://www.osti.gov/biblio/<id>"}`.
+
+If none of these yields a copy, leave the entry with its DOI alone. Do not
+link a paywalled publisher landing page as "full text".
+
+---
+
 ## 6. Citations on the research page
 
 Bullets on `research.html` carry inline citations to the papers that support

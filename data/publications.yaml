@@ -1221,6 +1221,8 @@
   month: 5
   doi: "10.1016/j.cpc.2026.110039"
   selected: true
+  links:
+    - {label: "arXiv", href: "https://arxiv.org/abs/2310.18493"}
 
 - section: journal
   authors: "Michel, P., Oudin, A., Rajesh, H., Ou, K., Chakraborty, D., Cao, S., Kur, E., Lancia, L., Ghosh, D., Riconda, C., Wurtele, J. S., Edwards, M. R."
@@ -1229,6 +1231,8 @@
   year: 2026
   month: 2
   doi: "10.1103/pnhn-w6tl"
+  links:
+    - {label: "arXiv", href: "https://arxiv.org/abs/2511.06076"}
 
 # ---- Added 2026-10-01 from Google Scholar, metadata verified via Crossref ----
 
@@ -1252,3 +1256,5 @@
   title: "Improved School and Workplace Interactions in ExaEpi, an Agent-Based Epidemiological Model"
   citation: "Lawrence Livermore National Laboratory, Livermore, CA, 2025"
   year: 2025
+  links:
+    - {label: "OSTI", href: "https://www.osti.gov/biblio/2587985"}
