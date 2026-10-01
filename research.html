@@ -113,20 +113,21 @@ physics-informed terms in the training objective.</p>
 <h2>Numerical methods</h2>
 <ul>
 <li>High-resolution finite-difference and finite-volume methods for
-hyperbolic conservation laws.</li>
+hyperbolic conservation laws <span class="cite">(<a href="https://doi.org/10.1137/110857659">SIAM J. Sci. Comput. 2012</a>; <a href="https://doi.org/10.1002/num.70060">Numer. Methods Partial Differ. Equ. 2026</a>)</span>.</li>
 <li>Nonlinear, non-oscillatory compact schemes. The
 <a href="https://debog.github.io/CRWENO/Overview.html">CRWENO</a> family
 couples compact reconstruction with weighted essentially non-oscillatory
-limiting, giving higher spectral resolution at a given formal order.</li>
+limiting, giving higher spectral resolution at a given formal order
+<span class="cite">(<a href="https://doi.org/10.1137/110857659">SIAM J. Sci. Comput. 2012</a>; <a href="https://doi.org/10.1007/s10915-014-9818-0">J. Sci. Comput. 2014</a>; <a href="https://doi.org/10.2514/1.J052654">AIAA J. 2014</a>)</span>.</li>
 <li>Multi-stage implicit and implicit-explicit (IMEX) time integration for
 multiscale systems, including characteristic-based flux partitioning for
-low-Mach-number and gravity-stratified flows.</li>
+low-Mach-number and gravity-stratified flows <span class="cite">(<a href="https://doi.org/10.1137/15M1044369">SIAM J. Sci. Comput. 2016</a>; <a href="https://doi.org/10.1007/978-3-319-19800-2_20">ICOSAHOM 2014, Springer LNCSE</a>)</span>.</li>
 <li>Multirate and extrapolated multirate methods for
 adaptive-mesh-refinement solvers.</li>
 <li>Well-balanced discretizations that preserve hydrostatic balance to
-machine precision.</li>
+machine precision <span class="cite">(<a href="https://doi.org/10.2514/1.J054580">AIAA J. 2016</a>; <a href="https://doi.org/10.2514/6.2015-2889">AIAA 2015-2889</a>)</span>.</li>
 <li>Preconditioning and nonlinear solver design for stiff multiphysics
-systems.</li>
+systems <span class="cite">(<a href="https://doi.org/10.2514/6.2022-1108">AIAA 2022-1108</a>)</span>.</li>
 </ul>
 
 <h2>Particle-based methods</h2>
@@ -134,7 +135,7 @@ systems.</li>
 <li>Super-droplet cloud microphysics, including ice processes, coupled to a
 performance-portable atmospheric solver.</li>
 <li>Fully implicit, exactly energy- and charge-conserving particle-in-cell
-algorithms for dense plasmas, with Monte-Carlo Coulomb collisions.</li>
+algorithms for dense plasmas, with Monte-Carlo Coulomb collisions <span class="cite">(<a href="https://doi.org/10.1016/j.jcp.2022.111030">J. Comput. Phys. 2022</a>; <a href="https://doi.org/10.1016/j.jcp.2023.112383">J. Comput. Phys. 2023</a>; <a href="https://doi.org/10.1016/j.jcp.2024.113427">J. Comput. Phys. 2024</a>; <a href="https://doi.org/10.1103/zwjx-jbxl">Phys. Rev. E 2025</a>)</span>.</li>
 <li>Agent-based epidemiological models, where each agent carries an
 individual disease and behaviour state.</li>
 </ul>
@@ -142,14 +143,15 @@ individual disease and behaviour state.</li>
 <h2>Plasma simulation</h2>
 <ul>
 <li>Continuum gyrokinetic and drift-kinetic modeling of the tokamak edge,
-on mapped multi-block grids with high-order finite-volume
-discretization.</li>
+on mapped multi-block grids with high-order finite-volume discretization
+<span class="cite">(<a href="https://doi.org/10.1016/j.jcp.2018.07.008">J. Comput. Phys. 2018a</a>; <a href="https://doi.org/10.1016/j.jcp.2018.07.009">J. Comput. Phys. 2018b</a>; <a href="https://doi.org/10.1063/5.0230913">Phys. Plasmas 2024</a>; <a href="https://doi.org/10.1063/5.0280028">Phys. Plasmas 2025</a>)</span>.</li>
 <li>Semi-implicit time integration of the Vlasov-Fokker-Planck system,
-treating the stiff collisional and parallel-streaming terms implicitly.</li>
+treating the stiff collisional and parallel-streaming terms implicitly
+<span class="cite">(<a href="https://doi.org/10.2514/6.2017-4016">AIAA 2017-4016</a>; <a href="https://doi.org/10.1007/s10915-018-0726-6">J. Sci. Comput. 2018</a>; <a href="https://doi.org/10.1063/5.0293154">Phys. Plasmas 2025</a>)</span>.</li>
 <li>Multifluid models for interpenetrating, counterstreaming plasmas in
-inertial confinement fusion.</li>
+inertial confinement fusion <span class="cite">(<a href="https://doi.org/10.1016/j.compfluid.2019.04.012">Comput. Fluids 2019</a>; <a href="https://doi.org/10.1109/TPS.2019.2897790">IEEE Trans. Plasma Sci. 2019</a>; <a href="https://doi.org/10.1063/5.0015302">Phys. Plasmas 2021</a>)</span>.</li>
 <li>Nonlinear hydrodynamics with photochemistry, for plasma-based and
-gaseous optical elements.</li>
+gaseous optical elements <span class="cite">(<a href="https://doi.org/10.1063/5.0268318">Phys. Plasmas 2025</a>; <a href="https://doi.org/10.1103/pnhn-w6tl">Phys. Rev. Applied 2026</a>)</span>.</li>
 </ul>
 
 <h2>High-performance computing</h2>
@@ -157,9 +159,9 @@ gaseous optical elements.</li>
 <li>Scalable implementation of nonlinear compact schemes, which require
 solving distributed tridiagonal systems at every reconstruction. Our
 iterative substructuring approach removed the serial bottleneck and
-demonstrated scaling on DOE leadership-class platforms.</li>
+demonstrated scaling on DOE leadership-class platforms <span class="cite">(<a href="https://doi.org/10.1137/140989261">SIAM J. Sci. Comput. 2015</a>)</span>.</li>
 <li>GPU-accelerated direct numerical simulation of compressible turbulent
-flows.</li>
+flows <span class="cite">(<a href="https://doi.org/10.1016/j.compfluid.2022.105744">Comput. Fluids 2023</a>)</span>.</li>
 <li>Performance-portable implementations over AMReX, and distributed
 multi-GPU training for the machine-learning work.</li>
 </ul>
@@ -168,23 +170,48 @@ multi-GPU training for the machine-learning work.</li>
 <ul>
 <li>Derivation, analysis, and parallel implementation of the
 <a href="https://debog.github.io/CRWENO/Overview.html">CRWENO</a> schemes
-(Ph.D., University of Maryland; adviser James Baeder).</li>
-<li>Time integrators in <a href="https://petsc.org/">PETSc</a>: multi-stage
-implicit, explicit and IMEX Runge-Kutta methods, and general linear methods
-with global error estimation.</li>
+(Ph.D., University of Maryland; adviser James Baeder)
+<span class="cite">(<a href="Files/2013_Ghosh_PhDThesis.pdf">thesis</a>; <a href="https://doi.org/10.1137/110857659">SIAM J. Sci. Comput. 2012</a>)</span>.</li>
+<li>Time integrators and a matrix format in
+<a href="https://petsc.org/">PETSc</a>, contributed 2013&ndash;2015 and still
+part of the library:
+<ul>
+<li><a href="https://petsc.org/release/manualpages/TS/TSGLEE/">TSGLEE</a> &mdash; general linear methods with
+global error estimation, which carry an error estimate in the solution vector
+rather than reconstructing it from a step-doubling or embedded pair
+(<a href="https://gitlab.com/petsc/petsc/-/commit/b6a60446953c429c7accd4182e4c15293a76cf99">implementation</a>,
+<a href="https://gitlab.com/petsc/petsc/-/commit/28cbf07de43475be4934e87cf0815199c4247d99">extension to diagonally implicit methods</a>).</li>
+<li><a href="https://petsc.org/release/manualpages/Mat/MATKAIJ/">MATKAIJ</a> &mdash; a matrix format for
+<i>I</i>&nbsp;&otimes;&nbsp;<i>S</i>&nbsp;+&nbsp;<i>J</i>&nbsp;&otimes;&nbsp;<i>T</i>
+with <i>S</i> and <i>T</i> small and dense and <i>J</i> sparse. This is the
+structure of the stage system in an implicit Runge-Kutta method, so storing it
+this way avoids forming the full Kronecker product
+(<a href="https://gitlab.com/petsc/petsc/-/commit/49bd79ccbacc9a2669ec09d6a41f2f533e7405b6">format</a>,
+<a href="https://gitlab.com/petsc/petsc/-/commit/2f175f51ba327c60f5279916665ab5419314f72d">example solving an IRK stage system</a>).</li>
+<li>Dormand-Prince and Bogacki-Shampine embedded
+<a href="https://petsc.org/release/manualpages/TS/TSRK/">Runge-Kutta</a> schemes, with the default changed to the
+embedded RK3BS so that adaptive stepping works without extra configuration
+(<a href="https://gitlab.com/petsc/petsc/-/commit/fdefd5e5da6933eb9789981da0487a06cd30939a">commit</a>).</li>
+<li>Extrapolated stage-predictor initial guesses for
+<a href="https://petsc.org/release/manualpages/TS/TSARKIMEX/">ARKIMEX</a>, which cut Newton iterations on stiff
+problems (<a href="https://gitlab.com/petsc/petsc/-/commit/56dcabba681126b550af18182af0c7d6111e4f6d">commit</a>).</li>
+<li>The Hull et al. (1972) non-stiff and stiff ODE test suite as TS example 31
+(<a href="https://gitlab.com/petsc/petsc/-/commit/bced771e3be803fac357661fe5df43b09bc9998a">commit</a>).</li>
+</ul>
+<span class="cite">(<a href="https://gitlab.com/petsc/petsc/-/commits/main?author=Debojyoti+Ghosh">all PETSc commits</a>)</span></li>
 <li>Semi-implicit and multirate time integration in
 <a href="https://frankgiraldo.wixsite.com/mysite/numa">NUMA</a>, a
 non-hydrostatic atmospheric model.</li>
 <li>A three-dimensional incompressible Navier-Stokes solver with immersed
 boundaries, applied to vortex-ring and wall interactions and to rotorcraft
-wake modeling.</li>
+wake modeling <span class="cite">(<a href="https://doi.org/10.2514/6.2010-5030">AIAA 2010-5030</a>; <a href="https://doi.org/10.2514/1.J051537">AIAA J. 2012</a>)</span>.</li>
 <li>Probability density function methods for power systems with uncertain
-input.</li>
+input <span class="cite">(<a href="https://doi.org/10.1137/130940050">SIAM/ASA J. Uncertain. Quantif. 2015</a>)</span>.</li>
 <li>High-order ENO and WENO schemes for ideal magnetohydrodynamics, and the
 effect of non-convexity on scheme convergence (M.Tech., IIT Bombay; adviser
-Avijit Chatterjee).</li>
+Avijit Chatterjee) <span class="cite">(<a href="Files/2006_Masters_Thesis.pdf">thesis</a>)</span>.</li>
 <li>Finite-volume time-domain solution of Maxwell's equations, used to
-predict the radar cross-section of low-observable aircraft.</li>
+predict the radar cross-section of low-observable aircraft <span class="cite">(<a href="Files/2004_Bachelors_Seminar.pdf">seminar</a>)</span>.</li>
 </ul>
 
 </main>

@@ -189,6 +189,11 @@ ol.pubs > li {
 .pub__links a:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 .toplink { font-size: .85rem; }
 
+/* ---------- inline citations ---------- */
+.cite { font-size: .87em; color: var(--fg-faint); }
+.cite a { color: var(--accent); }
+.cite a:hover { color: var(--accent-dk); }
+
 /* ---------- tables ---------- */
 .tablewrap { overflow-x: auto; margin: 0 0 1.2rem; }
 table { border-collapse: collapse; font-size: .94rem; min-width: 30rem; }
