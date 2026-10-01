@@ -22,6 +22,20 @@ Files/                   PDFs of papers, talks, resume, CV
 archive/                 superseded files, kept for reference
 ```
 
+## Deploying
+
+GitHub Pages publishes this site from the **`gh-pages`** branch, not `master`.
+Pushing to `master` alone changes nothing on the live site. Both branches are
+kept at the same commit:
+
+```
+git push origin master
+git push origin master:gh-pages
+```
+
+A build takes a couple of minutes; `gh api repos/debog/debog.github.io/pages/builds/latest --jq .status`
+reports progress. HTTPS is enforced, so `http://` 301-redirects to `https://`.
+
 ## Building
 
 ```
