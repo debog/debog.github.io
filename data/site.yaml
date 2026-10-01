@@ -67,7 +67,7 @@ pages:
   misc.html:
     title: "Misc | Debojyoti Ghosh"
     heading: "Miscellaneous"
-    tagline: "Photographs."
+    tagline: ""
     description: "Photo albums and miscellaneous pages of Debojyoti Ghosh."
   codes/petsc.html:
     title: "PETSc Installation Notes | Debojyoti Ghosh"

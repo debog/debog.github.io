@@ -99,6 +99,32 @@ real signed-in browser session, and it catches items ORCID misses (conference
 abstracts, lab reports). Worth checking a couple of times a year:
 <https://scholar.google.com/citations?user=NL34xJcAAAAJ&hl=en&sortby=pubdate>
 
+## Travel-video ticker
+
+`content/misc.html` holds a horizontally scrolling strip of videos from the
+YouTube Travel playlist, between Photography and Travel and events. The card
+data lives in `data/travel_videos.json` (id, title, duration); the page uses
+the 30 most recent and links to the full playlist.
+
+To refresh the list after adding videos, re-extract it from the playlist page
+(YouTube renders the list client-side, so the data sits in the `ytInitialData`
+blob and is keyed by `lockupViewModel`):
+
+```
+curl -sA "Mozilla/5.0" \
+  "https://www.youtube.com/playlist?list=PLCJJtCoWifB_frF7nO8uVv8o0NTtx5wF6" \
+  > /tmp/pl.html
+```
+
+then pull `contentId`, the metadata title, and the duration badge out of each
+`lockupViewModel` into `data/travel_videos.json` and rebuild. Thumbnails are
+hotlinked from `i.ytimg.com` at `/vi/<id>/mqdefault.jpg` and lazy-loaded.
+
+The strip auto-scrolls via a small inline script that clones the cards once so
+the wrap is seamless, and pauses on hover, focus and drag. Without JavaScript
+it stays an ordinary scrollable strip, and it does not move at all under
+`prefers-reduced-motion: reduce`.
+
 ## Photo gallery
 
 Each year in `content/misc.html` is a `<section class="year">` holding a

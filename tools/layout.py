@@ -164,6 +164,12 @@ def footer(site):
 </footer>"""
 
 
+def tagline_html(page):
+    """Pages may omit the tagline; do not emit an empty <p>."""
+    t = (page.get("tagline") or "").strip()
+    return f"<p>{esc(t)}</p>" if t else ""
+
+
 def render(site, page_file, body, extra_head="", extra_jsonld="", prefix="", page=None):
     page = page or site["pages"][page_file]
     jsonld = person_jsonld(site) if page_file == "index.html" else ""
@@ -183,7 +189,7 @@ def render(site, page_file, body, extra_head="", extra_jsonld="", prefix="", pag
 <div class="shell">
 <div class="pagehead">
 <h1>{esc(page['heading'])}</h1>
-<p>{esc(page['tagline'])}</p>
+{tagline_html(page)}
 </div>
 {body}
 </div>

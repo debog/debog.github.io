@@ -120,7 +120,7 @@ def sidebar(records):
 <dt>Proceedings</dt><dd>{n_c}</dd>
 <dt>Talks &amp; posters</dt><dd>{n_t}</dd>
 </dl>
-<p>Indexed lists are also kept at <a href="https://scholar.google.com/citations?user=NL34xJcAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://orcid.org/0000-0003-3910-2613">ORCID</a>.</p>
+<p>Indexed lists are also at <a href="https://scholar.google.com/citations?user=NL34xJcAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://orcid.org/0000-0003-3910-2613">ORCID</a>.</p>
 </section>
 <section>
 <h2>Downloads</h2>
