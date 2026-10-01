@@ -99,31 +99,37 @@ real signed-in browser session, and it catches items ORCID misses (conference
 abstracts, lab reports). Worth checking a couple of times a year:
 <https://scholar.google.com/citations?user=NL34xJcAAAAJ&hl=en&sortby=pubdate>
 
-## Travel-video ticker
+## Video tickers
 
-`content/misc.html` holds a horizontally scrolling strip of videos from the
-YouTube Travel playlist, between Photography and Travel and events. The card
-data lives in `data/travel_videos.json` (id, title, duration); the page uses
-the 30 most recent and links to the full playlist.
+The `misc.html` sidebar carries two vertical, auto-scrolling strips of YouTube
+videos: **Travel** and **Live performances**. Card data lives in
+`data/travel_videos.json` and `data/live_videos.json` (id, title, duration);
+each strip shows the 20 most recent and links to the full playlist.
 
-To refresh the list after adding videos, re-extract it from the playlist page
-(YouTube renders the list client-side, so the data sits in the `ytInitialData`
-blob and is keyed by `lockupViewModel`):
+| Playlist | Data file | Playlist id |
+|---|---|---|
+| Travel | `data/travel_videos.json` | `PLCJJtCoWifB_frF7nO8uVv8o0NTtx5wF6` |
+| Live performances | `data/live_videos.json` | `PLCJJtCoWifB9UBbEbQzD9FxYV8ryCVfBN` |
+
+To refresh after adding videos, re-extract from the playlist page. YouTube
+renders the list client-side, so the data sits in the `ytInitialData` blob and
+is keyed by **`lockupViewModel`** (it was `playlistVideoRenderer` until
+recently — that key now returns nothing):
 
 ```
-curl -sA "Mozilla/5.0" \
-  "https://www.youtube.com/playlist?list=PLCJJtCoWifB_frF7nO8uVv8o0NTtx5wF6" \
-  > /tmp/pl.html
+curl -sA "Mozilla/5.0" "https://www.youtube.com/playlist?list=<ID>" > /tmp/pl.html
 ```
 
-then pull `contentId`, the metadata title, and the duration badge out of each
-`lockupViewModel` into `data/travel_videos.json` and rebuild. Thumbnails are
-hotlinked from `i.ytimg.com` at `/vi/<id>/mqdefault.jpg` and lazy-loaded.
+Pull `contentId`, the `lockupMetadataViewModel` title, and the duration badge
+out of each `lockupViewModel` into the JSON file, then rebuild. Thumbnails are
+hotlinked from `i.ytimg.com` at `/vi/<id>/mqdefault.jpg` (320x180) and
+lazy-loaded. Some thumbnails carry pillarboxing baked into the source image by
+YouTube; that is in the JPEG, not the CSS.
 
-The strip auto-scrolls via a small inline script that clones the cards once so
-the wrap is seamless, and pauses on hover, focus and drag. Without JavaScript
-it stays an ordinary scrollable strip, and it does not move at all under
-`prefers-reduced-motion: reduce`.
+A small inline script at the end of `content/misc.html` drives both strips: it
+clones each list once so the scroll wraps without a visible jump, and pauses on
+hover, focus and drag. Without JavaScript they stay ordinary scrollable lists,
+and they do not move under `prefers-reduced-motion: reduce`.
 
 ## Photo gallery
 
