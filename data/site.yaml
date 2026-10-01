@@ -1,0 +1,91 @@
+# Site-wide profile and per-page metadata. Edit here, then run tools/build_site.py.
+profile:
+  name: "Debojyoti Ghosh"
+  role: "Computational Scientist"
+  org: "Center for Applied Scientific Computing"
+  org_url: "https://computing.llnl.gov/casc"
+  employer: "Lawrence Livermore National Laboratory"
+  employer_url: "https://www.llnl.gov/"
+  base_url: "https://debog.github.io"
+  # StatCounter. Set project to "" to switch tracking off.
+  statcounter_project: "8725416"
+  statcounter_security: "0c597bb9"
+  photo: "mypic.jpg"
+  orcid: "0000-0003-3910-2613"
+  scholar: "https://scholar.google.com/citations?user=NL34xJcAAAAJ&hl=en"
+  github: "https://github.com/debog"
+  gitlab: "https://gitlab.com/debojyoti.ghosh"
+  linkedin: "https://www.linkedin.com/in/debojyoti/"
+  researchgate: "https://www.researchgate.net/profile/Debojyoti_Ghosh2"
+  knows_about:
+    - "Computational physics"
+    - "Numerical methods for partial differential equations"
+    - "Scientific machine learning"
+    - "Reduced-order modeling"
+    - "High-performance computing"
+    - "Plasma physics simulation"
+    - "Particle-in-cell methods"
+    - "Atmospheric modeling"
+    - "Agent-based modeling"
+    - "Finite-difference and finite-volume methods"
+
+# Navigation order. label -> file
+nav:
+  - {label: "Home",         file: "index.html"}
+  - {label: "Research",     file: "research.html"}
+  - {label: "Publications", file: "publications.html"}
+  - {label: "Software",     file: "codes.html"}
+  - {label: "CV",           file: "resume.html"}
+  - {label: "Misc",         file: "misc.html"}
+
+pages:
+  index.html:
+    title: "Debojyoti Ghosh | Computational Scientist, LLNL"
+    heading: "Debojyoti Ghosh"
+    tagline: "Computational scientist working on numerical methods, scientific machine learning, and high-performance computing for physics simulation."
+    description: "Debojyoti Ghosh is a computational scientist at Lawrence Livermore National Laboratory working on numerical methods for PDEs, scientific machine learning, reduced-order modeling, and high-performance computing for plasma, atmospheric, and fluid simulation."
+  research.html:
+    title: "Research | Debojyoti Ghosh"
+    heading: "Research"
+    tagline: "Numerical algorithms and machine learning for large-scale physics simulation."
+    description: "Research of Debojyoti Ghosh: machine learning for particle-in-cell simulation, reduced-order modeling of plasmas, high-order finite-difference and finite-volume methods, implicit-explicit time integration, particle-based cloud microphysics, and agent-based epidemiological modeling."
+  publications.html:
+    title: "Publications | Debojyoti Ghosh"
+    heading: "Publications"
+    tagline: "Journal articles, conference papers, and presentations."
+    description: "Complete list of publications by Debojyoti Ghosh: journal articles, book chapters, conference proceedings, invited and minisymposium talks, theses, and technical reports in computational physics and scientific machine learning."
+  codes.html:
+    title: "Software | Debojyoti Ghosh"
+    heading: "Software"
+    tagline: "Open-source scientific software I develop and contribute to."
+    description: "Scientific software developed by and contributed to by Debojyoti Ghosh: HyPar, EUCLID, TridiagLU, and contributions to ERF, ExaEpi, WarpX, PETSc, libROM, COGENT, and NUMA."
+  resume.html:
+    title: "CV | Debojyoti Ghosh"
+    heading: "Curriculum Vitae"
+    tagline: "Experience, education, software, funding, and service."
+    description: "Curriculum vitae of Debojyoti Ghosh, computational scientist at Lawrence Livermore National Laboratory: professional experience, education, scientific software, funded projects, and professional service."
+  misc.html:
+    title: "Misc | Debojyoti Ghosh"
+    heading: "Miscellaneous"
+    tagline: "Photographs."
+    description: "Photo albums and miscellaneous pages of Debojyoti Ghosh."
+  codes/petsc.html:
+    title: "PETSc Installation Notes | Debojyoti Ghosh"
+    heading: "PETSc installation"
+    tagline: "Build notes and configure examples, including LLNL platforms."
+    description: "Notes on installing PETSc, the Portable Extensible Toolkit for Scientific Computing, with configure examples for LLNL systems and common build options."
+  codes/sundials.html:
+    title: "SUNDIALS Installation Notes | Debojyoti Ghosh"
+    heading: "SUNDIALS installation"
+    tagline: "Build notes for the SUNDIALS ODE and DAE solver suite."
+    description: "Notes on installing SUNDIALS, the SUite of Nonlinear and DIfferential/ALgebraic equation Solvers, including configure options."
+  codes/ibcartins3d.html:
+    title: "IBCartINS3D | Debojyoti Ghosh"
+    heading: "IBCartINS3D"
+    tagline: "A 3D Cartesian incompressible Navier-Stokes solver with immersed boundaries."
+    description: "IBCartINS3D is a three-dimensional Cartesian incompressible Navier-Stokes solver with an immersed boundary technique, based on the fractional-step method."
+  404.html:
+    title: "Page not found | Debojyoti Ghosh"
+    heading: "Page not found"
+    tagline: "That address does not match anything on this site."
+    description: "The requested page could not be found on debog.github.io."

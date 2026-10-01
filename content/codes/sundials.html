@@ -1,0 +1,60 @@
+<div class="cols">
+<main id="main">
+<p></p>
+<p>SUNDIALS a library of linear and non-linear equation solvers and ODE solvers, developed and maintained at the Center for Applied Scientific Computing, Lawrence Livermore National Laboratory. The <a href="https://computing.llnl.gov/projects/sundials"><strong>official webpage of SUNDIALS</strong></a> and the <a href="https://github.com/LLNL/sundials">repository</a>  has the documentation. This page has quick instructions to download and install it.
+
+        </p><h3>Download</h3>
+<p></p>
+<pre><code>git clone <a href="https://github.com/LLNL/sundials.git">https://github.com/LLNL/sundials.git</a> sundials</code></pre>
+<p></p>
+<h3>Installation</h3>
+<p></p>
+<p>The following steps should install SUNDIALS:
+        </p><li>Go to the SUNDIALS directory</li><br/>
+<li>Create build and install subdirectories:
+        <ul>
+</ul><pre><code>mkdir build &amp;&amp; mkdir install<br/>
+          cd build</code></pre>
+</li>
+<li>Compile and install<br/>
+<ul>
+</ul><pre><code>cmake -DCMAKE_INSTALL_PREFIX=../install \<br/>
+                -DENABLE_MPI=ON \<br/>
+                -DMPI_C_COMPILER=mpicc \<br/>
+                -DMPI_CXX_COMPILER=mpicxx \<br/>
+                -DCMAKE_C_FLAGS='-O3' \<br/>
+                -DSUNDIALS_BUILD_WITH_MONITORING=ON ../<br/>
+          make install</code></pre>
+</li><br/>
+<h3>Linking to SUNDIALS</h3>
+<p></p>
+<li>Set environment variable <strong>SUNDIALS_DIR</strong> (Can be set in .bashrc too)
+        <ul>
+</ul><pre><code>export SUNDIALS_DIR=/path/to/sundials/install<br/> 
+          (Eg. SUNDIALS_DIR=/home/ghosh/sundials/install)</code></pre>
+</li>
+<li>Include flags:
+        <pre><code>-I$(SUNDIALS_DIR)/include</code></pre>
+</li>
+<li>Linker flags (for ARKODE with parallel vectors):
+        <ul>
+</ul><pre><code>-L$(SUNDIALS_DIR)/lib \<br/>
+        -L$(SUNDIALS_DIR)/lib64 \<br/>
+        -lsundials_arkode \<br/>
+        -lsundials_nvecparallel</code></pre>
+        
+        See SUNDIALS documentation for the appropriate linker flags for other packages.
+        </li>
+</main>
+<aside class="side">
+<section>
+<h2>Software</h2>
+<ul>
+<li><a href="../codes.html">All software</a></li>
+<li><a href="petsc.html">PETSc</a></li>
+<li><a href="sundials.html">SUNDIALS</a></li>
+<li><a href="ibcartins3d.html">IBCartINS3D</a></li>
+</ul>
+</section>
+</aside>
+</div>

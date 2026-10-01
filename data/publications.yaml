@@ -1,0 +1,1254 @@
+# Canonical publication list. Edit this file; then run tools/build.py.
+# section: journal | book | proceedings | invited | thesis | report | talk
+
+- section: journal
+  authors: "Salian, L. V., Samala, R., Ghosh, D."
+  title: "Central compact finite-difference scheme with high spectral resolution for KdV equation"
+  citation: "Numerical Methods for Partial Differential Equations, 42 (1), 2026, e70060"
+  year: 2026
+  month: 1
+  doi: "10.1002/num.70060"
+  links:
+    - {label: "full text", href: "Files/2026_Salian_EtAl_NMPDE.pdf"}
+
+- section: journal
+  authors: "Dorf, M., Dorr, M., Geyko, V., Ghosh, D., Umansky, M., Angus, J."
+  title: "Semi-implicit continuum kinetic modeling of weakly collisional parallel transport in a magnetic mirror"
+  citation: "Physics of Plasmas, 32, 2025, 103903"
+  year: 2025
+  month: 10
+  doi: "10.1063/5.0293154"
+  links:
+    - {label: "full text", href: "Files/2025_Dorf_EtAl_PoP_2.pdf"}
+
+- section: journal
+  authors: "van de Wetering, J., Angus, J. R., Farmer, W., Geyko, V., Ghosh, D., Grote, D., Weber, C., Zimmerman, G."
+  title: "Particle-in-cell simulations of burning inertial confinement fusion capsule implosions"
+  citation: "Physical Review E, 112, 2025, 045207"
+  year: 2025
+  month: 10
+  doi: "10.1103/zwjx-jbxl"
+  links:
+    - {label: "full text", href: "Files/2025_vdW_EtAl_PRE.pdf"}
+
+- section: journal
+  authors: "Oudin, A., Ghosh, D., Riconda, C., Lancia, L., Kur, E., Ou, K., Perez-Ramirez, V. M., Lee, J., Edwards, M. R., Michel, P."
+  title: "PIAFS: A 2D nonlinear hydrodynamics code to model gaseous optics"
+  citation: "Physics of Plasmas, 32, 2025, 072714"
+  year: 2025
+  month: 7
+  doi: "10.1063/5.0268318"
+  links:
+    - {label: "full text", href: "Files/2025_Oudin_EtAl_PoP.pdf"}
+  selected: true
+
+- section: journal
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Umansky, M., Soukhanovskii, V."
+  title: "Implicit full-F simulations of neoclassical ion transport"
+  citation: "Physics of Plasmas, 32, 2025, 083904"
+  year: 2025
+  month: 8
+  doi: "10.1063/5.0280028"
+  links:
+    - {label: "full text", href: "Files/2025_Dorf_EtAl_PoP.pdf"}
+
+- section: journal
+  authors: "Geyko, V. I., Joseph, I., Dorf, M. A., Ghosh, D., Dorr, M. R."
+  title: "Drift kinetic electrostatic simulations of the edge localized mode heat pulse"
+  citation: "Physics of Plasmas, 31, 2024, 123903"
+  year: 2024
+  month: 12
+  doi: "10.1063/5.0230913"
+  links:
+    - {label: "full text", href: "Files/2024_Geyko_EtAl_PoP.pdf"}
+
+- section: journal
+  authors: "Angus, J. R., Farmer, W., Friedman, A., Geyko, V., Ghosh, D., Grote, D., Larson, D., Link, A."
+  title: "An implicit particle code with exact energy and charge conservation for studies of dense plasmas in axisymmetric geometries"
+  citation: "Journal of Computational Physics, 519, 2024, 113427"
+  year: 2024
+  month: 12
+  doi: "10.1016/j.jcp.2024.113427"
+  links:
+    - {label: "full text", href: "Files/2024_Angus_EtAl_JCP.pdf"}
+
+- section: journal
+  authors: "Dorf, M., Dorr, M., Ghosh, D."
+  title: "Development of an implicit electromagnetic capability for a hybrid gyrokinetic ion-fluid electron model"
+  citation: "Contributions to Plasma Physics, 64 (7-8), 2024"
+  year: 2024
+  month: 8
+  doi: "10.1002/ctpp.202300114"
+  links:
+    - {label: "full text", href: "Files/2024_Dorf_EtAl_CPP.pdf"}
+
+- section: journal
+  authors: "Bonneville, C., Choi, Y., Ghosh, D., Belof, J. L."
+  title: "GPLaSDI: Gaussian Process-based interpretable Latent Space Dynamics Identification through deep autoencoder"
+  citation: "Computer Methods in Applied Mechanics and Engineering, 418 (A), 2024, 116535"
+  year: 2024
+  month: 1
+  doi: "10.1016/j.cma.2023.116535"
+  links:
+    - {label: "full text", href: "Files/2024_Bonneville_EtAl_CMAME.pdf"}
+
+- section: journal
+  authors: "Angus, J. R., Farmer, W., Friedman, A., Ghosh, D., Grote, D., Larson, D., Link, A."
+  title: "An implicit particle code with exact energy and charge conservation for electromagnetic studies of dense plasmas"
+  citation: "Journal of Computational Physics, 491, 2023, 112383"
+  year: 2023
+  month: 10
+  doi: "10.1016/j.jcp.2023.112383"
+  links:
+    - {label: "full text", href: "Files/2023_Angus_EtAl_JCP.pdf"}
+
+- section: journal
+  authors: "Kim, Y., Ghosh, D., Constantinescu, E. M., Balakrishnan, R."
+  title: "GPU-accelerated DNS of compressible turbulent flows"
+  citation: "Computers and Fluids, 251, 2023, 105744"
+  year: 2023
+  month: 1
+  doi: "10.1016/j.compfluid.2022.105744"
+  links:
+    - {label: "full text", href: "Files/2023_Kim_EtAl_CompFluids.pdf"}
+
+- section: journal
+  authors: "Angus, J. R., Link, A., Friedman, A., Ghosh, D., Johnson, J. D."
+  title: "On numerical energy conservation for an implicit particle-in-cell method coupled with a binary Monte-Carlo algorithm for Coulomb collisions"
+  citation: "Journal of Computational Physics, 456, 2022"
+  year: 2022
+  month: 5
+  doi: "10.1016/j.jcp.2022.111030"
+  links:
+    - {label: "full text", href: "Files/2022_Angus_EtAl_JCP.pdf"}
+
+- section: journal
+  authors: "Chapman T., Winjum B. J., Berger, R. L., Dimits, A., Banks, J. W., Brunner, S., Joseph, I., Ghosh, D."
+  title: "Nonlinear kinetic simulation study of the ion–ion streaming instability in single- and multi-ion species plasmas"
+  citation: "Physics of Plasmas, 28, 022105, 2021"
+  year: 2021
+  month: 2
+  doi: "10.1063/5.0015302"
+  links:
+    - {label: "full text", href: "Files/2021_Chapman_EtAl_PhysPlasmas.pdf"}
+
+- section: journal
+  authors: "Ghosh, D., Chapman, T. D., Berger, R. L., Dimits, A., Banks, J. W."
+  title: "A Multispecies, Multifluid Model for Laser-Induced Counterstreaming Plasma Simulations"
+  citation: "Computers and Fluids, 186, 2019, 38-57"
+  year: 2019
+  month: 5
+  doi: "10.1016/j.compfluid.2019.04.012"
+  links:
+    - {label: "full text", href: "Files/2019_Ghosh_EtAl_CompFluids.pdf"}
+  selected: true
+
+- section: journal
+  authors: "Dimits, A. M., Banks, J. W., Berger, R. L., Brunner, S., Chapman, T. D., Copeland, D., Ghosh, D., Arrighi, W. J., Hittinger, J., Joseph, I."
+  title: "Linearized Coulomb Collision Operator for Simulation of Interpenetrating Plasma Streams"
+  citation: "IEEE Transactions on Plasma Science, 47 (5), 2019, 2074-2080"
+  year: 2019
+  month: 5
+  doi: "10.1109/TPS.2019.2897790"
+  links:
+    - {label: "full text", href: "Files/2019_DimitsEtAl_IEEE.pdf"}
+
+- section: journal
+  authors: "Ghosh, D., Dorf, M. A., Dorr, M. R., Hittinger, J."
+  title: "Kinetic Simulation of Collisional Magnetized Plasmas with Semi-Implicit Time Integration"
+  citation: "Journal of Scientific Computing, 77 (2), 2018, 819-849"
+  year: 2018
+  month: 11
+  doi: "10.1007/s10915-018-0726-6"
+  links:
+    - {label: "full text", href: "Files/2018_GhoshEtAl_JSC.pdf"}
+
+- section: journal
+  authors: "Dorr, M., Colella, P., Dorf, M., Ghosh, D., Hittinger, J., Schwartz, P. O."
+  title: "High-order Discretization of a Gyrokinetic Vlasov Model in Edge Plasma Geometry"
+  citation: "Journal of Computational Physics, 373, 2018, 605-630"
+  year: 2018
+  month: 11
+  doi: "10.1016/j.jcp.2018.07.008"
+  links:
+    - {label: "full text", href: "Files/2018_DorrEtAl_JCP.pdf"}
+
+- section: journal
+  authors: "Dorf, M., Dorr, M., Hittinger, J., Lee, W., Ghosh, D."
+  title: "High-order finite-volume modeling of drift waves"
+  citation: "Journal of Computational Physics, 373, 2018, 446-454"
+  year: 2018
+  month: 11
+  doi: "10.1016/j.jcp.2018.07.009"
+  links:
+    - {label: "full text", href: "Files/2018_DorfEtAl_JCP.pdf"}
+
+- section: journal
+  authors: "Ghosh, D., Constantinescu, E. M."
+  title: "Semi-Implicit Time Integration of Atmospheric Flows with Characteristic-Based Flux Partitioning"
+  citation: "SIAM Journal on Scientific Computing, 38 (3), 2016, A1848-A1875"
+  year: 2016
+  month: 1
+  doi: "10.1137/15M1044369"
+  links:
+    - {label: "full text", href: "Files/2016_Ghosh_Constantinescu_SISC.pdf"}
+
+- section: journal
+  authors: "Ghosh, D., Constantinescu, E. M."
+  title: "Well-Balanced, Conservative Finite-Difference Algorithm for Atmospheric Flows"
+  citation: "AIAA Journal, 54 (4), 2016, 1370-1385"
+  year: 2016
+  month: 4
+  doi: "10.2514/1.J054580"
+  links:
+    - {label: "full text", href: "Files/2016_Ghosh_Constantinescu_AIAAJ.pdf"}
+
+- section: journal
+  authors: "Wang, P., Barajas-Solano, D. A., Constantinescu, E. M., Abhyankar, S., Ghosh, D., Smith, B. F., Huang, Z., Tartakovsky, A. M."
+  title: "Probabilistic Density Function Method for Stochastic ODEs of Power Systems with Uncertain Power Input"
+  citation: "SIAM/ASA Journal on Uncertainty Quantification, 3 (1), 2015, 873-896"
+  year: 2015
+  month: 1
+  doi: "10.1137/130940050"
+  links:
+    - {label: "full text", href: "Files/2015_Wang_EtAl_JUQ.pdf"}
+
+- section: journal
+  authors: "Ghosh, D., Constantinescu, E. M., Brown, J."
+  title: "Efficient Implementation of Nonlinear Compact Schemes on Massively Parallel Platforms"
+  citation: "SIAM Journal on Scientific Computing, 37 (3), 2015, C354–C383"
+  year: 2015
+  month: 1
+  doi: "10.1137/140989261"
+  links:
+    - {label: "full text", href: "Files/2015_Ghosh_Consta_Brown_SISC.pdf"}
+  selected: true
+
+- section: journal
+  authors: "Ghosh, D., Baeder, J. D."
+  title: "Weighted Non-Linear Compact Schemes for the Direct Numerical Simulation of Compressible, Turbulent Flows"
+  citation: "Journal of Scientific Computing, 61 (1), 2014, 61-89"
+  year: 2014
+  month: 10
+  doi: "10.1007/s10915-014-9818-0"
+  links:
+    - {label: "full text", href: "Files/2014_Ghosh_Baeder_JSC.pdf"}
+
+- section: journal
+  authors: "Ghosh, D., Medida, S., Baeder, J. D."
+  title: "Application of Compact-Reconstruction Weighted Essentially Nonoscillatory Schemes to Compressible Aerodynamic Flows"
+  citation: "AIAA Journal, 52 (9), 2014, 1858-1870"
+  year: 2014
+  month: 9
+  doi: "10.2514/1.J052654"
+  links:
+    - {label: "full text", href: "Files/2014_Ghosh_Medida_Baeder_AIAAJ.pdf"}
+
+- section: journal
+  authors: "Ghosh, D., Baeder, J. D."
+  title: "Compact Reconstruction Schemes with Weighted ENO Limiting for Hyperbolic Conservation Laws"
+  citation: "SIAM Journal on Scientific Computing, 34 (3), 2012, A1678–A1706"
+  year: 2012
+  month: 1
+  doi: "10.1137/110857659"
+  links:
+    - {label: "full text", href: "Files/2012_Ghosh_Baeder_SISC.pdf"}
+  selected: true
+
+- section: journal
+  authors: "Ghosh, D., Baeder, J. D."
+  title: "A High-Order Accurate Incompressible Navier Stokes Algorithm for Vortex Ring Interactions with Solid Wall"
+  citation: "AIAA Journal, 50 (11), 2012, 2408-2422"
+  year: 2012
+  month: 11
+  doi: "10.2514/1.J051537"
+  links:
+    - {label: "full text", href: "Files/2012_Ghosh_Baeder_AIAAJ.pdf"}
+
+- section: book
+  authors: "Ghosh, D., Constantinescu, E. M."
+  title: "Nonlinear Compact Finite-Difference Schemes with Semi-Implicit Time Stepping"
+  citation: "in <i><a href=\"http://link.springer.com/book/10.1007/978-3-319-19800-2\">Spectral and High Order Methods for Partial Differential Equations ICOSAHOM 2014</a></i>, Springer Lecture Notes in Computational Science and Engineering, Volume 106, 2015, 237-245"
+  year: 2015
+  doi: "10.1007/978-3-319-19800-2_20"
+  links:
+    - {label: "full text", href: "Files/2015_Ghosh_Constantinescu_LNCSE.pdf"}
+
+- section: proceedings
+  authors: "Tsai, P.-H., Chung, S. W., Ghosh, D., Loffeld, J., Choi, Y., Belof, J. L."
+  title: "Accelerating Kinetic Simulations of Electrostatic Plasmas with Reduced-Order Modeling"
+  citation: "Workshop on <a href=\"https://ml4physicalsciences.github.io/2023/\">Machine Learning and the Physical Sciences</a>, 37th conference on Neural Information Processing Systems (NeurIPS), December 10 - 16, 2023, New Orleans, LA"
+  year: 2023
+  month: 12
+  links:
+    - {label: "poster", href: "https://nips.cc/media/PosterPDFs/NeurIPS%202023/76207.png"}
+    - {label: "full text", href: "Files/2023_Tsai_EtAl_NeurIPS.pdf"}
+    - {label: "video", href: "https://youtu.be/I5X8kSwY1AI"}
+
+- section: proceedings
+  authors: "Bonneville, C., Choi, Y., Ghosh, D., Belof, J. L."
+  title: "Data-Driven Autoencoder Numerical Solver with Uncertainty Quantification for Fast Physical Simulations"
+  citation: "Workshop on <a href=\"https://ml4physicalsciences.github.io/2023/\">Machine Learning and the Physical Sciences</a>, 37th conference on Neural Information Processing Systems (NeurIPS), December 10 - 16, 2023, New Orleans, LA"
+  year: 2023
+  month: 12
+  links:
+    - {label: "poster", href: "https://nips.cc/media/PosterPDFs/NeurIPS%202023/76111.png"}
+    - {label: "full text", href: "Files/2023_Bonneville_EtAl_NeurIPS.pdf"}
+
+- section: proceedings
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Umansky, M."
+  title: "A hybrid gyrokinetic ion -- fluid electron model for edge plasma simulations"
+  citation: "29th IAEA Fusion Energy Conference, October 16 - 21, 2023, London, UK"
+  year: 2023
+  month: 10
+  links:
+    - {label: "full text", href: "Files/2023_Dorf_EtAl_IAEA.pdf"}
+
+- section: proceedings
+  authors: "Christopher, J., Davis, A., Gao, X., Ghosh, D., Dorf, M., Dorr, M., Ricketson, L."
+  title: "On Preconditioning for the Two-Field Neutral Model"
+  citation: "AIAA Scitech 2022 Forum, January 3 - 7, 2022, San Diego, CA"
+  year: 2022
+  month: 1
+  doi: "10.2514/6.2022-1108"
+  links:
+    - {label: "full text", href: "Files/2022_Christopher_EtAl_AIAA.pdf"}
+
+- section: proceedings
+  authors: "Munafo, A., Vogiatzis, K., Ghosh, D., Vedula, P., Panesi, M., Josyula, E."
+  title: "High-Order Techniques for Multi-Component Turbulent Non-Equilibrium Hypersonic Flows"
+  citation: "AIAA Scitech 2020 Forum, January 6 - 10, 2020, Orlando, FL"
+  year: 2020
+  month: 1
+  doi: "10.2514/6.2020-2193"
+  links:
+    - {label: "full text", href: "Files/2020_Munafo_EtAl_AIAA.pdf"}
+
+- section: proceedings
+  authors: "Dorf, M. A., Dorr, M., Ghosh, D., Hittinger, J., Umansky, M. V., Angus, J., Pankin, A."
+  title: "Simulation of Cross-Separatrix Edge Plasma Transport with the Continuum Gyrokinetic Code COGENT"
+  citation: "27th IAEA Fusion Energy Conference, October 22 - 27, 2019, Gandhinagar, Gujarat, India"
+  year: 2019
+  month: 10
+  links:
+    - {label: "abstract", href: "https://www.iaea.org/sites/default/files/18/10/cn-258-abstracts.pdf"}
+    - {label: "full text", href: "Files/2018_Dorf_EtAl_IAEA.pdf"}
+
+- section: proceedings
+  authors: "Guhur, P.-L., Constantinescu, E.M., Ghosh, D., Peterka, T., Cappello, F."
+  title: "Detection of Silent Data Corruption in Adaptive Numerical Integration Solvers"
+  citation: "IEEE Cluster Conference, September 5-8, 2017, Honolulu, HI"
+  year: 2017
+  month: 9
+  doi: "10.1109/CLUSTER.2017.13"
+  links:
+    - {label: "full text", href: "Files/2017_Guhur_EtAl_IEEECluster.pdf"}
+
+- section: proceedings
+  authors: "Ghosh, D., Dorf, M., Hittinger, J., Dorr, M."
+  title: "Implicit-Explicit Time Integration for the Vlasov-Fokker-Planck Equations"
+  citation: "AIAA Paper 2017-4016, 48th AIAA Plasmadynamics and Lasers Conference, June 5-9, 2017, Denver, CO"
+  year: 2017
+  month: 6
+  doi: "10.2514/6.2017-4016"
+  links:
+    - {label: "full text", href: "Files/2017_Ghosh_EtAl_AIAA_Plasma.pdf"}
+
+- section: proceedings
+  authors: "Ghosh, D., Constantinescu, E.M."
+  title: "Well-Balanced Formulation of Gravitational Source Terms for Conservative Finite-Difference Atmospheric Flow Solvers"
+  citation: "AIAA Paper 2015-2889, 7th AIAA Atmospheric and Space Environments Conference, June 22-26, 2015, Dallas, TX"
+  year: 2015
+  month: 6
+  doi: "10.2514/6.2015-2889"
+  links:
+    - {label: "full text", href: "Files/2015_Ghosh_Consta_AIAA_Atmos.pdf"}
+
+- section: proceedings
+  authors: "Ghosh, D., Medida, S., Baeder, J. D."
+  title: "Compact-Reconstruction Weighted Essentially Non-Oscillatory Schemes for Unsteady Navier-Stokes Equations"
+  citation: "AIAA Paper 2012-2832, 42nd AIAA Fluid Dynamics Conference and Exhibit, June 25-28, 2012, New Orleans, LA"
+  year: 2012
+  month: 6
+  doi: "10.2514/6.2012-2832"
+  links:
+    - {label: "full text", href: "Files/2012_Ghosh_Medida_Baeder_AIAA_Fluid.pdf"}
+
+- section: proceedings
+  authors: "Ghosh, D., Baeder, J. D."
+  title: "Numerical Simulation of Vortex Ring Interactions with Solid Wall"
+  citation: "49th AIAA Aerospace Sciences Meeting, Jan 4-7, 2011, Orlando, FL, <a href=\"http://arc.aiaa.org/doi/abs/10.2514/6.2011-675\" >doi:10.2514/6.2011-675</a>"
+  year: 2011
+  links:
+    - {label: "full text", href: "Files/2011_Ghosh_Baeder_AIAA_ASM.pdf"}
+
+- section: proceedings
+  authors: "Ghosh, D., Baeder, J. D."
+  title: "A High Order Conservative Upwind Algorithm for the Incompressible Navier Stokes Equations"
+  citation: "AIAA Paper 2010-5030, 40th AIAA Fluid Dynamics Conference and Exhibit, June 28 – July 1, 2010, Chicago, IL"
+  year: 2010
+  month: 6
+  doi: "10.2514/6.2010-5030"
+  links:
+    - {label: "full text", href: "Files/2010_Ghosh_Baeder_AIAA_Fluid.pdf"}
+
+- section: invited
+  authors: "Ghosh, D., Beydoun, H., McGuffin, D., Gardner, D. J., Lundquist, K."
+  title: "A scalable particle-based microphysics model for atmospheric flow simulations"
+  citation: "18th U.S. National Congress on Computational Mechanics (USNCCM), Minisymposium on <i><a href=\"https://drive.google.com/file/d/1TO6tjImpnlld44QtCcPhkQWG8xcXZSqZ/view\">Computational fluid dynamics (CFD) and fluid-structure interaction (FSI): method development and applications</a></i>, July 20 - 24, 2025, Chicago, IL"
+  year: 2025
+  month: 7
+  links:
+    - {label: "abstract", href: "https://drive.google.com/file/d/1-foGTC76t9eK8ViyBiKPSpDWngjNW6U3/view"}
+    - {label: "presentation", href: "Files/2025_07_USNCCM18_Slides.pdf"}
+
+- section: invited
+  authors: "Angus, J. R., Farmer, W., Friedman, A., Fu, Y., Geyko, V., Ghosh, D., Grote, D., Larson, D., Ludwig, J., Van de Wetering, J., Zimmerman, G., Link, A."
+  title: "An implicit particle code for fully kinetic simulations of dynamically compressing plasmas"
+  citation: "IEEE Pulsed Power and Plasma Science Conference (PPPS 2025), Session on <i><a href=\"https://www.ppps2025.kit.edu/278.php\">Computational Plasmas</a></i>, June 15 - 20, 2025, Berlin, Germany"
+  year: 2025
+  month: 6
+  links:
+    - {label: "abstract", href: "https://www.ppps2025.kit.edu/278.php"}
+
+- section: invited
+  authors: "Ghosh, D., Beydoun, H., McGuffin, D., Gardner, D. J., Lundquist, K."
+  title: "Super Droplet Method for Lagrangian Microphysics Simulations in ERF"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80996\">Energy Research and Forecasting (ERF): A New Performance-Portable Atmospheric Modeling Code</a></i>, March 3 - 7, 2025, Fort Worth, TX"
+  year: 2025
+  month: 3
+  links:
+    - {label: "abstract", href: "https://meetings.siam.org/sess/dsp_talk.cfm?p=140736"}
+    - {label: "presentation", href: "Files/2025_03_SIAMCSE_Slides.pdf"}
+
+- section: invited
+  authors: "Myers, A., Nugent, P., Singhal, A., Acquesta, E., Ghosh, D., Keilbart, N., Nguyen, T."
+  title: "ExaEpi: An Exascale-Capable Agent-Based Model for Epidemiology"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80945\">Predictive Disease Modeling and Simulations for Decision-making</a></i>, March 3 - 7, 2025, Fort Worth, TX"
+  year: 2025
+  month: 3
+  links:
+    - {label: "abstract", href: "https://meetings.siam.org/sess/dsp_talk.cfm?p=140655"}
+
+- section: invited
+  authors: "Tsai, P.-H., Chung, S. W., Ghosh, D., Loffeld, J., Choi, Y., Belof, J."
+  title: "Accelerating Kinetic Simulations of Electrostatic Plasmas with Local Reduced-Order Modeling"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=81081\">Scientific Machine Learning at Scale</a></i>, March 3 - 7, 2025, Fort Worth, TX"
+  year: 2025
+  month: 3
+  links:
+    - {label: "abstract", href: "https://meetings.siam.org/sess/dsp_talk.cfm?p=140931"}
+
+- section: invited
+  authors: "Dorf, M., Dorr, M., Ghosh, D."
+  title: "A Semi-Implicit Gyrokinetc Ion – Fluid Electron Hybrid Model for Edge Plasma Simulations"
+  citation: "Platform for Advanced Scientific Computing (PASC), Minisymposium on <i><a href=\"https://pasc24.pasc-conference.org/session/?sess=sess117\">High Performance Computing for Magnetic Fusion Applications - Part II</a></i>, June 3 - 5, 2024, Zurich, Switzerland"
+  year: 2024
+  month: 6
+  links:
+    - {label: "abstract", href: "https://pasc24.pasc-conference.org/presentation/?id=msa125&sess=sess117"}
+
+- section: invited
+  authors: "Ghosh, D., Dorf, M., Dorr, M."
+  title: "Magnetized Plasma Simulations with High-Order Implicit-Explicit Time Integrators"
+  citation: "9th European Congress on Computational Methods in Applied Sciences and Engineering (ECCOMAS), Minisymposium on <i><a href=\"https://eccomas2024.org/event/session/fcc64e07-f81e-11ee-a60e-000c29ddfc0c\">Computational Kinetic Theory II</a></i>, June 3 - 7, 2024, Lisbon, Portugal"
+  year: 2024
+  month: 6
+  links:
+    - {label: "abstract", href: "https://eccomas2024.org/event/contribution/e27fe396-b0ce-11ee-ac5b-000c29ddfc0c"}
+    - {label: "presentation", href: "Files/2024_06_ECCOMAS_Slides.pdf"}
+
+- section: invited
+  authors: "Tsai, P.-H., Chung, S. W., Ghosh, D., Loffeld, J., Choi, Y., Belof, J."
+  title: "Projection-Based Reduced Order Model for Accelerating Kinetic Simulations of Electrostatic Plasmas"
+  citation: "SIAM Conference on Parallel Processing for Scientific Computing (PP), Minisymposium on <i><a href=\"https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=78172\">HPC Algorithms for Kinetic Equations for Plasmas</a></i>, March 5 - 8, 2024, Baltimore, MD"
+  year: 2024
+  month: 3
+  links:
+    - {label: "abstract", href: "https://meetings.siam.org/sess/dsp_talk.cfm?p=133055"}
+
+- section: invited
+  authors: "Choi, Y., Copeland, D., Cheung, S. W., Kim, Y., He, X., Fries, W., Bonneville, C., Ghosh, D., Shin, Y., Park, J. S., Belof, J., Afeyan, B."
+  title: "Physics-Guided Latent Space Dynamics Identification in Model Order Reduction"
+  citation: "17th U.S. National Congress on Computational Mechanics (USNCCM), Minisymposium on <i><a href=\"https://17.usnccm.org/408\">Model Order Reduction for Parameterized Continuum Mechanics</a></i>, July 23 - 27, 2023, Albuquerque, NM"
+  year: 2023
+  month: 7
+
+- section: invited
+  authors: "Ghosh, D., Dorf, M., Dorr, M., Ricketson, L."
+  title: "A Multiphysics Implicit-Explicit Time Integration Algorithm for Simulating Tokamak-Edge Plasma Dynamics"
+  citation: "17th U.S. National Congress on Computational Mechanics (USNCCM), Minisymposium on <i><a href=\"https://17.usnccm.org/517\">Advances in Numerical Methods for Solution of PDEs</a></i>, July 23 - 27, 2023, Albuquerque, NM"
+  year: 2023
+  month: 7
+  links:
+    - {label: "presentation", href: "Files/2023_07_USNCCM_Slides.pdf"}
+
+- section: invited
+  authors: "Bonneville, C., He, X., Chen, J.-S., Fries, W., Cheung, S. W., Ghosh, D., Belof, J., Springer, K., Choi, Y."
+  title: "Certified and Parameterized Latent Space Dynamics Identification for Time Dependent Image Data"
+  citation: "<a href=\"http://cogsys.org/symposium/discovery-2023/\">AAAI Spring Symposium on Computational Approaches to Scientific Discovery</a>, March 27 - 29, 2023, San Francisco, CA"
+  year: 2023
+  month: 3
+  links:
+    - {label: "abstract", href: "http://cogsys.org/symposium/discovery-2023/abstracts/Abstract_5285.pdf"}
+    - {label: "presentation", href: "http://cogsys.org/symposium/discovery-2023/talks/Choi.pdf"}
+
+- section: invited
+  authors: "Ghosh, D., Dorr, M., Dorf, M., Ricketson, L."
+  title: "Semi-Implicit Time Integration for Multiscale Tokamak-Edge Plasma Dynamics"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=75197\">Computational Methods for Kinetic Models</a></i>, February 26 - March 3, 2023, Amsterdam, The Netherlands"
+  year: 2023
+  month: 2
+  links:
+    - {label: "abstract", href: "https://meetings.siam.org/sess/dsp_talk.cfm?p=123891"}
+    - {label: "presentation", href: "Files/2023_02_SIAMCSE_Slides.pdf"}
+
+- section: invited
+  authors: "Bonneville, C., Choi, Y., Ghosh, D."
+  title: "GPLaSDI: Identifying Autoencoders Latent Space Dynamics with Gaussian Processes for Non-Intrusive Reduced Order Models"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=75596\">Reduced Order Modeling of Differential Equations Through Deep Learning Algorithms</a></i>, February 26 - March 3, 2023, Amsterdam, The Netherlands"
+  year: 2023
+  month: 2
+  links:
+    - {label: "abstract", href: "https://meetings.siam.org/sess/dsp_talk.cfm?p=124959"}
+
+- section: invited
+  title: "High-Order Semi-Implicit Time Integration Methods for Multiscale Advective Physics"
+  citation: "University of Zaragoza, October 2022 (Online talk)"
+  year: 2022
+  month: 10
+  links:
+    - {label: "presentation", href: "Files/2022_10_UZaragoza.pdf"}
+
+- section: invited
+  authors: "Ricketson, L., Dorr, M., Dorf M., Ghosh, D."
+  title: "Continuum Kinetic Simulations of Tokamak Edge Plasmas with COGENT"
+  citation: "Platform for Advanced Scientific Computing (PASC) Conference, Minisymposium on <i><a href=\"https://pasc22.pasc-conference.org/program/schedule/index.html%3Fpost_type=page&p=11&sess=sess153.html\">High Performance Computing in Kinetic Simulations of Plasmas - Part III: Advanced Numerical Methods and Algorithms</a></i>, June 27 - 29, 2022, Basel, Switzerland"
+  year: 2022
+  month: 6
+  links:
+    - {label: "abstract", href: "https://pasc22.pasc-conference.org/program/schedule/index.html%3Fpost_type=page&p=10&id=msa261&sess=sess153.html"}
+
+- section: invited
+  authors: "Ricketson, L., Ghosh, D., Dorr, M., Dorf M."
+  title: "Block Preconditioning of a Semi-Implicit Gyrokinetic Model of Fusion Plasmas"
+  citation: "17th Copper Mountain Conference On Iterative Methods, Session on <i><a href=\"https://easychair.org/smart-program/CM2022/index.html\">Scalable Solvers for Coupled Multiphysics 2</a></i>, April 4 - 8, 2022, <a href=\"https://grandmaster.colorado.edu/copper/2022/\">Virtual Format</a>"
+  year: 2022
+  month: 4
+  links:
+    - {label: "abstract", href: "https://easychair.org/smart-program/CM2022/2022-04-04.html#talk:187896"}
+
+- section: invited
+  authors: "Ricketson, L., Ghosh, D., Dorr, M., Dorf M., Hittinger, J."
+  title: "Continuum Kinetic Simulations of Tokamak Edge Plasmas with COGENT"
+  citation: "Platform for Advanced Scientific Computing (PASC) Conference, Minisymposium on <i><a href=\"https://pasc21.pasc-conference.org/program/schedule/session/?sess=sess145\">Towards Exascale Computing in Kinetic Simulations of Magnetic Fusion Plasmas. Part III - Advanced Numerical Methods and Algorithms</a></i>, July 5 - 9, 2021, <a href=\"https://pasc21.pasc-conference.org/\">Virtual Format</a>"
+  year: 2021
+  month: 7
+  links:
+    - {label: "abstract", href: "https://pasc21.pasc-conference.org/program/schedule/presentation/?id=msa349&sess=sess145"}
+
+- section: invited
+  authors: "Ricketson, L., Ghosh, D., Dorr, M., Dorf M."
+  title: "Block Preconditioning of a Semi-Implicit Gyrokinetic Model of Fusion Plasmas"
+  citation: "9th International Conference on Computational Methods for Coupled Problems in Science and Engineering (COUPLED PROBLEMS 2021), Minisymposium on <i><a href=\"https://coupled2021.cimne.com/technical_program\">Block Preconditioning for Challenging Multiphysics Systems</a></i>, June 14 - 16, 2021, <a href=\"https://coupled2021.cimne.com/\">Virtual Format</a>"
+  year: 2021
+  month: 6
+
+- section: invited
+  authors: "Ghosh, D., Chapman, T., Berger, R. L., Banks, J. W., Copeland, D."
+  title: "A Semi-Implicit Algorithm for the Simulation of High–Z Plasma Interpenetration"
+  citation: "15th United States National Congress on Computational Mechanics (USNCCM15), Minisymposium on <i>Innovative Higher Order Discretization Methods in Computational Science and Engineering, in honor of Prof. Mary Wheeler</i>, July 28 - August 1, 2019, Austin, TX"
+  year: 2019
+  month: 7
+  links:
+    - {label: "abstract", href: "Files/2019_07_Ghosh_EtAl_USNCCM_abstract.pdf"}
+    - {label: "presentation", href: "Files/2019_07_USNCCM_Slides.pdf"}
+
+- section: invited
+  authors: "Hittinger, J., Dorr, M. R., Dorf, M. A., Ghosh, D., Ricketson, L. F."
+  title: "Kinetic Edge Plasma Simulation using a Continuum Model"
+  citation: "Platform for Advanced Scientific Computing (PASC), Minisymposium on <i><a href=\"https://pasc19.pasc-conference.org/program/schedule/session/?sess=sess159\">HPC Challenges in Kinetic Simulations of Plasmas, Part I of III: Eulerian Approach</a></i>, June 12 - 14, 2019, Zurich, Switzerland"
+  year: 2019
+  month: 6
+  links:
+    - {label: "abstract", href: "https://pasc19.pasc-conference.org/program/schedule/presentation/?id=msa288&sess=sess159"}
+
+- section: invited
+  authors: "Ghosh, D., Chapman, T. D., Berger, R. L., Dimits, A., Banks, J. W."
+  title: "A Multi-Species, Multi-Fluid Model for Simulating Plasma Interpenetration"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=66011\">State-of-the-art high-order Numerical Methods and Complex Fluid Simulations</a></i>, February 25 - March 1, 2019, Spokane, WA"
+  year: 2019
+  month: 2
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=96369"}
+    - {label: "presentation", href: "Files/2019_02_SIAMCSE_Slides.pdf"}
+
+- section: invited
+  authors: "Banks, J. W., Berger, R. L., Brunner, S., Chapman, T. D., Dimits, A., Ghosh, D."
+  title: "Simulation of Interpenetrating Plasmas in 2D using the Grid Based Continuum Code LOKI"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=65920\">Computational Methods for Kinetic Models of Plasma</a></i>, February 25 - March 1, 2019, Spokane, WA"
+  year: 2019
+  month: 2
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=96107"}
+
+- section: invited
+  authors: "Ghosh, D., Kavouklis, C., Chapman, T., Berger, R. L., Vogman, G. V."
+  title: "Numerical Simulation of Counterstreaming Plasma Interactions using a Multifluid Model"
+  citation: "13th World Congress on Computational Mechanics (WCCMXIII), Minisymposium on <i><a href=\"http://www.wccm2018.org/MS_319\">High-order Discretizations for Multi-physics Applications</a></i>, July 22 - 27, 2018, New York, NY"
+  year: 2018
+  month: 7
+  links:
+    - {label: "abstract", href: "Files/2018_07_Ghosh_EtAl_WCCM_abstract.pdf"}
+    - {label: "presentation", href: "Files/2018_07_WCCM_Slides.pdf"}
+
+- section: invited
+  authors: "Dimits, A. M., Berger, R. L., Chapman, T., Ghosh, D., Arrighi W.J., Hittinger, J. A. F, Joseph, I., Kavouklis, C. Brunner, S., Banks, J. W."
+  title: "Linearized Coulomb Collision Operator for Simulation of Interpenetrating Plasma Streams"
+  citation: "45th IEEE International Conference on Plasma Science, June 24 - 28, 2018, Denver, CO"
+  year: 2018
+  month: 6
+  links:
+    - {label: "abstract", href: "https://eventmobi.com/api/events/20751/documents/download/95d47e70-f3e3-4ebf-8014-985e6ccfe28d.pdf/as/Abstract1521.pdf"}
+
+- section: invited
+  title: "Implicit-Explicit Time Integration for Multiscale Physics"
+  citation: "Department of Applied Mathematics and Statistics, University of California Santa Cruz, December 2017, Santa Cruz, CA"
+  year: 2017
+  month: 12
+  links:
+    - {label: "presentation", href: "Files/2017_12_UCSC.pdf"}
+
+- section: invited
+  authors: "Ghosh, D., Constantinescu, E. M."
+  title: "Characteristic-Based Slow-Wave-Fast-Wave Partitioning for Semi-Implicit Time Integration of Atmospheric Flows"
+  citation: "<a href=\"https://www2.cisl.ucar.edu/events/workshops/2017/theme-of-the-year/workshop-multiscale-geoscience-numerics\">IMAGe 2017 Theme of the Year: Workshop on Multiscale Geoscience Numerics</a>, National Center for Atmospheric Research (NCAR), May 16 - 19, 2017, Boulder, CO"
+  year: 2017
+  month: 5
+  links:
+    - {label: "abstract", href: "https://www2.cisl.ucar.edu/sites/default/files/Ghosh%20-%20Abstract.pdf"}
+    - {label: "presentation", href: "Files/2017_05_NCAR_TOY_Slides.pdf"}
+
+- section: invited
+  authors: "Ghosh, D., Dorr, M., Dorf, M., Hittinger, J."
+  title: "Implementation of Implicit-Explicit Time Integration for the Kinetic Modeling of Tokamak Plasma Edge"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"http://meetings.siam.org/sess/dsp_programsess.cfm?sessioncode=61169\">Computational Plasma Physics</a></i>, February 27 - March 3, 2017, Atlanta, GA"
+  year: 2017
+  month: 2
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=82099"}
+    - {label: "presentation", href: "Files/2017_03_SIAMCSE_Slides.pdf"}
+    - {label: "Video", href: "https://www.pathlms.com/siam/courses/4150/sections/5842/video_presentations/42684"}
+
+- section: invited
+  authors: "Dorr, M., Colella, P., Dorf, M., Ghosh, D., Hittinger, J."
+  title: "Exact Preservation of Zero Velocity Divergence in a High-Order, Mapped-Grid, Finite-Volume Discretization of a Gyrokinetic System"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"http://meetings.siam.org/sess/dsp_programsess.cfm?sessioncode=61169\">Computational Plasma Physics</a></i>, February 27 - March 3, 2017, Atlanta, GA"
+  year: 2017
+  month: 2
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=82098"}
+
+- section: invited
+  authors: "Ghosh, D., Constantinescu, E. M."
+  title: "Characteristic-Based Flux Splitting for Implicit-Explicit Time Integration of Low-Mach Number Flows"
+  citation: "13th U.S. National Congress on Computational Mechanics (USNCCM13), Minisymposium on <i>Advances in Implicit / Explicit (IMEX) Time integration of Multiphysics Systems</i>, July 26 - 30, 2015, San Diego, CA"
+  year: 2015
+  month: 7
+  links:
+    - {label: "abstract", href: "Files/2015_Ghosh_Consta_USNCCM_abstract.txt"}
+    - {label: "presentation", href: "Files/2015_07_USNCCM_Slides.pdf"}
+
+- section: invited
+  authors: "Ghosh, D., Constantinescu, E. M."
+  title: "A Finite-Difference Algorithm with Characteristic-Based Semi-Implicit Time-Integration for the Euler Equations with Gravitational Forcing"
+  citation: "SIAM Conference on Mathematical & Computational Issues in the Geosciences, Minisymposium on <i><a href=\"http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=20961\">Modeling and Simulation of Multiscale and Coupled Processes in Atmospheric Physics</a></i>, June 29 - July 2, 2015, Stanford, CA"
+  year: 2015
+  month: 6
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=71053"}
+    - {label: "presentation", href: "Files/2015_07_SIAMGS_Slides.pdf"}
+
+- section: invited
+  authors: "Ghosh, D., Constantinescu, E. M."
+  title: "A Compact-Reconstruction WENO Scheme with Semi-Implicit Time Integration"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"http://meetings.siam.org/sess/dsp_programsess.cfm?sessioncode=20076\">Recent Advances in High Order Spatial Discretization Methods for PDEs</a></i>, March 14 - 18, 2015, Salt Lake City, UT"
+  year: 2015
+  month: 3
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=66949"}
+    - {label: "presentation", href: "Files/2015_03_SIAMCSE_Slides.pdf"}
+
+- section: invited
+  authors: "Ketcheson, D., Ghosh, D."
+  title: "Stability-Optimized Time Integrators for WENO Discretizations"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=20185\">Advances in Time-stepping Methods</a></i>, March 14 - 18, 2015, Salt Lake City, UT"
+  year: 2015
+  month: 3
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=67409"}
+
+- section: invited
+  authors: "Barajas-Solano, D. A., Tarakovsky, A., Ghosh, D., Constantinescu, E. M., Abhyankar, S."
+  title: "Probability Density Methods for the Analysis of Power Grids Under Uncertainty"
+  citation: "SIAM Conference on Computational Science and Engineering, Minisymposium on <i><a href=\"http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=20141\">Distributed Cyber-Physical Systems: Modelling and Controlling the Power Grid</a></i>, March 14 - 18, 2015, Salt Lake City, UT"
+  year: 2015
+  month: 3
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=67250"}
+
+- section: invited
+  authors: "Ghosh, D., Constantinescu, E. M., Brown, J."
+  title: "Scalable Non-Linear Compact Schemes"
+  citation: "International Conference on Spectral and High Order Methods (ICOSAHOM), Minisymposium on <i>Aspects of Time Stepping</i>, June 23 - 27, 2014, Salt Lake City, UT"
+  year: 2014
+  month: 6
+  links:
+    - {label: "abstract", href: "Files/2014_06_ICOSAHOM_SaltLakeCity.pdf"}
+    - {label: "presentation", href: "Files/2014_06_ICOSAHOM_Slides.pdf"}
+
+- section: invited
+  title: "Compact-Reconstruction WENO Schemes - Theory, Implementation and Applications"
+  citation: "National Institute of Aerospace, June 2014, Hampton, VA"
+  year: 2014
+  month: 6
+  links:
+    - {label: "presentation", href: "Files/2014_06_NIA.pdf"}
+
+- section: thesis
+  title: "Compact-Reconstruction Weighted Essentially Non-Oscillatory Schemes for Hyperbolic Conservation Laws"
+  citation: "Ph. D. Thesis, University of Maryland, College Park, January 2013"
+  year: 2013
+  month: 1
+  links:
+    - {label: "UMD Repository", href: "http://hdl.handle.net/1903/14350"}
+    - {label: "full text", href: "Files/2013_Ghosh_PhDThesis.pdf"}
+    - {label: "presentation", href: "Files/2012_12_Ghosh_PhDPresentation.pdf"}
+
+- section: thesis
+  title: "Higher Order Non-Oscillatory Schemes in Ideal Magnetohydrodynamics"
+  citation: "Masters Thesis, Indian Institute of Technology Bombay, July 2006"
+  year: 2006
+  month: 7
+  links:
+    - {label: "full text", href: "Files/2006_Masters_Thesis.pdf"}
+
+- section: thesis
+  title: "Finite Volume Time Domain Solutions of Maxwell's Equations"
+  citation: "Bachelors Seminar, Indian Institute of Technology Bombay, March 2004"
+  year: 2004
+  month: 3
+  links:
+    - {label: "full text", href: "Files/2004_Bachelors_Seminar.pdf"}
+
+- section: report
+  authors: "Ghosh, D., Constantinescu, E. M., Brown, J."
+  title: "Scalable Nonlinear Compact Schemes"
+  citation: "Technical Memorandum, ANL/MCS-TM-340, Argonne National Laboratory, April 2014"
+  year: 2014
+  month: 4
+  links:
+    - {label: "ANL Repository", href: "https://publications.anl.gov/anlpubs/2014/04/104241.pdf"}
+    - {label: "full text", href: "Files/2014_Ghosh_Consta_Brown_MCSTR340.pdf"}
+
+- section: talk
+  authors: "Lehe, R., Angus, J. R., Ghosh, D., Groenewald, R., Huebl, A., Formenti, A., Grote, D., Myers, A., Shalpoval, O., Vay, J.-L., Zhang, W., Zoni, E."
+  title: "WarpX for Fusion Research: Recent Advances and New Capabilities"
+  citation: "67th Annual Meeting of the American Physical Society’s Division of Plasma Physics (DPP), November 17 - 21, 2025, Long Beach, CA"
+  year: 2025
+  month: 11
+
+- section: talk
+  authors: "Oudin, A., Ghosh, D., Kur, E., Lancia, L., Riconda, C., Ou, K., Perez-Ramirez, V. M., Cao, S., Singh, D., Redshaw, C., Rajesh, H., Dedeler, P., Edwards, M. R., Michel, P."
+  title: "Nonlinear Modeling of Photochemically-Induced Gaseous Optical elements"
+  citation: "13ème Forum Lasers et Plasmas, June 2 - 6, 2025, Le Plan-de-la-Tour, France"
+  year: 2025
+  month: 6
+  also: "53rd Annual Anomalous Absorption Conference, May 11 - 16, 2025, Sedona, AZ"
+  links:
+    - {label: "abstract", href: "https://www.cpht.polytechnique.fr/sites/default/files/ForumILP_programme-ebook.pdf"}
+    - {label: "abstract", href: "https://anomalousabsorption.org/pdfs/program-2025.pdf"}
+
+- section: talk
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Umansky, M., Geyko, V., Angus, J., Soukhanovskii, V."
+  title: "Implicit simulations of collisional transport in magnetized plasmas with the continuum gyrokinetic code COGENT"
+  citation: "Sherwood Fusion Theory Conference, April 7 - 9, 2025, New York, NY"
+  year: 2025
+  month: 4
+
+- section: talk
+  authors: "Angus, J. R., van de Wetering, J. J., Farmer, W., Friedman, A., Fu, Y., Geyko, V., Ghosh, D., Grote, D., Larson, D., Zimmerman, G."
+  title: "An implicit particle code for fully kinetic simulations of burning plasmas"
+  citation: "IFE-STAR Conference, April 7, 2025, Breckenridge, CO"
+  year: 2025
+  month: 4
+
+- section: talk
+  authors: "Terasaki, G. M., Ghosh, D., Navid, A."
+  title: "Examining Complex Disease Spread Dynamics in Schools and Workplaces Using An Exascale Agent-Based Framework"
+  citation: "SIAM Conference on Computational Science and Engineering, March 3 - 7, 2025, Fort Worth, TX"
+  year: 2025
+  month: 3
+  links:
+    - {label: "abstract", href: "https://meetings.siam.org/sess/dsp_talk.cfm?p=143485"}
+
+- section: talk
+  authors: "Salian, L. V., Rathan, S., Ghosh, D."
+  title: "A new central compact finite difference scheme with high spectral resolution for dispersive equations"
+  citation: "19th International Conference on Hyperbolic Problems: Theory, Numerics and Applications, July 1 - 5, 2024, Shanghai, China"
+  year: 2024
+  month: 7
+  links:
+    - {label: "abstract", href: "https://www.hyp2024.sjtu.edu.cn/Kindeditor/Upload/file/20240704/202407041046388509985.pdf"}
+
+- section: talk
+  authors: "Ricketson, L., Dorr, M., Dorf, M., Ghosh, D."
+  title: "Solvers and preconditioners enabling flexible IMEX integration of fusion plasmas in COGENT"
+  citation: "18th Copper Mountain Conference on Iterative Methods, April 14 - 19, 2024, Copper Mountain, CO"
+  year: 2024
+  month: 4
+  links:
+    - {label: "abstract", href: "https://easychair.org/smart-program/CM2024/2024-04-16.html#talk:246500"}
+
+- section: talk
+  authors: "Angus, J., Farmer, W., Friedman, A., Geyko, V., Ghosh, D., Grote, D., Larson, D., Link, A."
+  title: "An implicit particle code with exact energy and charge conservation for dynamically compressing plasmas: Solver scaling and performance"
+  citation: "18th Copper Mountain Conference on Iterative Methods, April 14 - 19, 2024, Copper Mountain, CO"
+  year: 2024
+  month: 4
+  links:
+    - {label: "abstract", href: "https://easychair.org/smart-program/CM2024/2024-04-16.html#talk:246516"}
+
+- section: talk
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Angus, J. R."
+  title: "Modeling tokamak edge plasma with the continuum full-F code COGENT"
+  citation: "65th Annual Meeting of the American Physical Society’s Division of Plasma Physics (DPP), October 30 - November 3, 2023, Denver, CO"
+  year: 2023
+  month: 10
+  links:
+    - {label: "abstract", href: "https://meetings.aps.org/Meeting/DPP23/Session/TP11.64"}
+
+- section: talk
+  authors: "Dun, J., Angus, J. R., Farmer, W., Friedman, A., Geyko, V. I., Ghosh, D., Graziani, F. R., Grote, D., Larson, D., Link, A. J., Zimmerman, G. B."
+  title: "Particle-in-cell simulations of shockwaves in plasma"
+  citation: "65th Annual Meeting of the American Physical Society’s Division of Plasma Physics (DPP), October 30 - November 3, 2023, Denver, CO"
+  year: 2023
+  month: 10
+  links:
+    - {label: "abstract", href: "https://meetings.aps.org/Meeting/DPP23/Session/NP11.109"}
+
+- section: talk
+  authors: "Angus, J. R., Farmer W., Friedman, A., Ghosh D., Grote, D., Larson, D., Link, A. J."
+  title: "An implicit particle code with exact energy and charge conservation for electromagnetic studies of dense plasmas"
+  citation: "65th Annual Meeting of the American Physical Society’s Division of Plasma Physics (DPP), October 30 - November 3, 2023, Denver, CO"
+  year: 2023
+  month: 10
+  links:
+    - {label: "abstract", href: "https://meetings.aps.org/Meeting/DPP23/Session/NP11.108"}
+
+- section: talk
+  authors: "Tsai, P.-H., Chung S. W., Ghosh, D., Choi, Y., Belof, J."
+  title: "Accelerating Kinetic Simulations of Electrostatic Plasmas with Reduced-Order Modeling"
+  citation: "65th Annual Meeting of the American Physical Society’s Division of Plasma Physics (DPP), October 30 - November 3, 2023, Denver, CO"
+  year: 2023
+  month: 10
+  links:
+    - {label: "abstract", href: "https://meetings.aps.org/Meeting/DPP23/Session/CO04.8"}
+
+- section: talk
+  authors: "Ghosh, D., Dorr, M., Dorf, M., Ricketson, L."
+  title: "High-order implicit-explicit time integration for the kinetic simulation of magnetized plasmas"
+  citation: "Foundations of Computational Mathematics (FoCM), Workshop on  Multiresolution and Adaptivity in Numerical PDEs,  June 12 - 21, 2023, Paris, France"
+  year: 2023
+  month: 6
+  links:
+    - {label: "poster", href: "Files/2023_06_FoCM_GhoshAl_Poster.pdf"}
+
+- section: talk
+  authors: "Angus, J., Farmer, W., Friedman, A., Ghosh, D., Grote, D., Larson, D., Link, A."
+  title: "An implicit particle code with exact energy and charge conservation for electromagnetic studies of dense plasmas"
+  citation: "International Conference on Plasma Science (ICOPS), May 21 - 25, 2023, Santa Fe, NM"
+  year: 2023
+  month: 5
+  links:
+    - {label: "poster", href: "Files/2023_05_ICOPS_AngusEtAl_Poster.pdf"}
+
+- section: talk
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Angus, J."
+  title: "Including electromagnetic effects into COGENT simulations of edge plasmas"
+  citation: "U.S. Transport Task Force (TTF) Workshop, May 2 - 5, 2023, Madison, WI"
+  year: 2023
+  month: 5
+  links:
+    - {label: "poster", href: "Files/2023_05_TTF_DorfEtAl_Poster.pdf"}
+
+- section: talk
+  authors: "Geyko, V., Joseph, I., Dorf, M., Dorr, M., Ghosh, D."
+  title: "Electrostatic drift-kinetic simulations of edge localized mode heat pulses in the tokamak scrape-off layer"
+  citation: "64th Annual Meeting of the American Physical Society’s Division of Plasma Physics (DPP), October 17 - 21, 2022, Spokane, WA"
+  year: 2022
+  month: 10
+  links:
+    - {label: "abstract", href: "https://meetings.aps.org/Meeting/DPP22/Session/PP11.23"}
+
+- section: talk
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Angus, J."
+  title: "Progress with the full-F continuum edge gyrokinetic code COGENT"
+  citation: "64th Annual Meeting of the American Physical Society’s Division of Plasma Physics (DPP), October 17 - 21, 2022, Spokane, WA"
+  year: 2022
+  month: 10
+  links:
+    - {label: "abstract", href: "https://meetings.aps.org/Meeting/DPP22/Session/PP11.22"}
+
+- section: talk
+  authors: "Geyko, V., Joseph, I., Dorf, M., Dorr, M., Ghosh, D."
+  title: "Drift kinetic simulations of edge localized modes in tokamak scrape-off layer plasmas"
+  citation: "25th International Conference on Plasma Surface Interaction in Controlled Fusion Devices, June 13 - 17, 2022, Virtual Format"
+  year: 2022
+  month: 6
+
+- section: talk
+  authors: "Angus, J. R., Link, A., Friedman, A., Ghosh, D., Johnson, J. D."
+  title: "On numerical energy conservation for an implicit particle-in-cell method coupled with a binary Monte-Carlo algorithm for Coulomb collisions"
+  citation: "49th IEEE International Conference on Plasma Science (ICOPS), May 22 - 26, 2022, Seattle, WA"
+  year: 2022
+  month: 5
+
+- section: talk
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Cohen, R."
+  title: "Gyrokinetic Modeling of Electrostatic Ion-Scale Turbulence in Divertor Tokamaks"
+  citation: "63rd Annual Meeting of the American Physical Society’s Division of Plasma Physics (DPP), November 8 - 12, 2021, Pittsburgh, PA"
+  year: 2021
+  month: 11
+  links:
+    - {label: "abstract", href: "https://meetings.aps.org/Meeting/DPP21/Session/PP11.43"}
+
+- section: talk
+  authors: "Joseph, I., Geyko, V. I., Dorf, M. A., Dorr, M. R., Ghosh, D., Ricketson, L. F."
+  title: "Edge localized mode propagation through the tokamak scrape-off layer"
+  citation: "Plasma Edge Theory (PET) Workshop, September 13 - 15, 2021, <a href=\"https://www.epfl.ch/research/domains/swiss-plasma-center/news/pet21/\">Virtual Format</a>"
+  year: 2021
+  month: 9
+
+- section: talk
+  authors: "Ghosh, D., Berger, R. L., Chapman, T., Dimits, A., Banks, J. W."
+  title: "Hydrodynamic Simulation of Counterstreaming Plasmas with a Multifluid Model"
+  citation: "72nd Annual Meeting of the American Physical Society’s Division of Fluid Dynamics (DFD), November 23 - 26, 2019, Seattle, WA"
+  year: 2019
+  month: 11
+  links:
+    - {label: "abstract", href: "http://meetings.aps.org/Meeting/DFD19/Session/B16.5"}
+    - {label: "presentation", href: "Files/2019_11_APSDFD_Slides.pdf"}
+
+- section: talk
+  authors: "Chapman, T., Berger, R. L., Dimits, A., Ghosh, D., Joseph, I., Winjum, B., Banks, J. W., Brunner, S."
+  title: "Nonlinear evolution of the ion-ion streaming instability in single- and multi-ion species plasmas"
+  citation: "61st Annual Meeting of the APS Division of Plasma Physics (DPP), October 21 - 25, 2019, Fort Lauderdale, FL"
+  year: 2019
+  month: 10
+  links:
+    - {label: "abstract", href: "http://meetings.aps.org/Meeting/DPP19/Session/PO11.4"}
+
+- section: talk
+  authors: "Berger, R., Ghosh, D., Banks, J. W., Arrighi, W. J., Belyaev, M. A., Brunner, S., Chapman, T., Copeland, D. M., Dimits, A., Hittinger, J., Jones, O., Rozmus, W."
+  title: "Multi-dimensional Simulations of Interpenetrating Plasmas"
+  citation: "49th Anomalous Absorption Conference, June 9 - 14, 2019, Telluride, CO"
+  year: 2019
+  month: 6
+
+- section: talk
+  authors: "Berger, R., Ghosh, D., Chapman, T., Arrighi, W., Banks, J., Dimits, A. M., Hittinger, J., Joseph, I., Kavouklis, C."
+  title: "High-order Conservative, Eulerian, Multi-dimensional Hydrodynamic Simulations of Interpenetrating Plasmas"
+  citation: "60th Annual Meeting of the APS Division of Plasma Physics, November 5 - 9, 2018, Portland, OR"
+  year: 2018
+  month: 11
+  links:
+    - {label: "abstract", href: "http://meetings.aps.org/Meeting/DPP18/Session/JO4.2"}
+
+- section: talk
+  authors: "Angus, J. R., Dorf, M., Ghosh D."
+  title: "Drift-Ideal MHD Simulations of Flow-Stabilized Z-Pinch Plasmas"
+  citation: "60th Annual Meeting of the APS Division of Plasma Physics, November 5 - 9, 2018, Portland, OR"
+  year: 2018
+  month: 11
+  links:
+    - {label: "abstract", href: "http://meetings.aps.org/Meeting/DPP18/Session/PP11.69"}
+
+- section: talk
+  authors: "Ghosh, D., Kavouklis, C., Chapman, T., Berger, R."
+  title: "A Finite-Volume, Semi-Implicit Multifluid Algorithm for the Simulation of Counterstreaming Plasma Dynamics"
+  citation: "SIAM Annual Meeting, July 9 - 13, 2018, Portland, OR"
+  year: 2018
+  month: 7
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=94089"}
+    - {label: "presentation", href: "Files/2018_07_SIAMAN18_Portland_Slides.pdf"}
+
+- section: talk
+  authors: "Dorf, M. A., Angus, J. R., Ghosh, D."
+  title: "Gyrokinetic Simulations of Drift-Wave Instabilities in Flow-Stabilized Z-Pinch Plasmas"
+  citation: "45th IEEE International Conference on Plasma Science, June 24 - 28, 2018, Denver, CO"
+  year: 2018
+  month: 6
+  links:
+    - {label: "abstract", href: "https://eventmobi.com/api/events/20751/documents/download/b437b0b0-ef5d-40ac-8da9-8c7ae7536dc4.pdf/as/Abstract1104.pdf"}
+
+- section: talk
+  authors: "Angus, J. R., Dorf, M. A., Ghosh, D."
+  title: "Drift-Ideal MHD Simulations of the Entropy Mode in Flow-Stabilized Z-Pinch Plasmas"
+  citation: "45th IEEE International Conference on Plasma Science, June 24 - 28, 2018, Denver, CO"
+  year: 2018
+  month: 6
+  links:
+    - {label: "abstract", href: "https://eventmobi.com/api/events/20751/documents/download/559d3bd5-3254-411c-889e-cae65bb013cc.pdf/as/Abstract1125.pdf"}
+
+- section: talk
+  authors: "Dimits, A. M., Banks, J. W., Berger, R. L., Brunner, S., Chapman, T., Ghosh, D., Arrighi, W. J., Hittinger, J., Joseph, I., Kavouklis, C."
+  title: "Linearized Coulomb Collision Operator for Simulation of Interpenetrating Plasma Streams"
+  citation: "Kinetic Effects in ICF Workshop, May 23, 2018, Santa Fe, NM"
+  year: 2018
+  month: 5
+
+- section: talk
+  authors: "Kavouklis, C., Colella, P., Ghosh, D."
+  title: "A 6th order finite volume multigrid Poisson solver"
+  citation: "15th Copper Mountain Conference on Iterative Methods, March 25 - 30, 2017, Copper Mountain, CO"
+  year: 2017
+  month: 3
+  links:
+    - {label: "abstract", href: "http://grandmaster.colorado.edu/copper/2018/program-static/2018-03-30.html#talk:64983"}
+
+- section: talk
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Hittinger, J., Lee, W., Cohen R."
+  title: "Drift-kinetic simulations of axisymmetric plasma transport at the edge of a divertor tokamak"
+  citation: "59th Annual Meeting of the APS Division of Plasma Physics, October 23 - 27, 2017, Milwaukee, WI"
+  year: 2017
+  month: 10
+  links:
+    - {label: "abstract", href: "http://meetings.aps.org/Meeting/DPP17/Session/PP11.73"}
+
+- section: talk
+  authors: "Ghosh, D., Kavouklis, C., Berger, R. L., Chapman, T., Hittinger, J."
+  title: "A Multifluid Numerical Algorithm for Interpenetrating Plasma Dynamics"
+  citation: "59th Annual Meeting of the APS Division of Plasma Physics, October 23 - 27, 2017, Milwaukee, WI"
+  year: 2017
+  month: 10
+  links:
+    - {label: "abstract", href: "http://meetings.aps.org/Meeting/DPP17/Session/GO8.5"}
+    - {label: "presentation", href: "Files/2017_10_APSDPP_Milwaukee_Slides.pdf"}
+
+- section: talk
+  authors: "Ghosh, D., Chapman, T., Berger, R. L., Khodak, M., Hittinger, J."
+  title: "Simulation of interpenetrating plasmas in 1D with a multifluid approach"
+  citation: "47th Annual Anomalous Absorption Conference, June 11 - 16, 2017, Florence, OR"
+  year: 2017
+  month: 6
+  links:
+    - {label: "Poster", href: "Files/2017_06_AnomAbsorpConf_Poster.pdf"}
+
+- section: talk
+  authors: "Lee, W., Dorf, M., Dorr, M., Cohen, R., Ghosh, D., Hittinger, J., Umansky, M., Krasheninnikov, S."
+  title: "Status of 5D continuum kinetic code COGENT and its verification with kinetic drift wave instability"
+  citation: "International Sherwood Fusion Theory Conference, May 1 - 3, 2017, Annapolis, MD"
+  year: 2017
+  month: 5
+
+- section: talk
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Hittinger, J., Lee, W., Cohen, R."
+  title: "Continuum kinetic modeling of cross-separatrix plasma transport with COGENT"
+  citation: "International Sherwood Fusion Theory Conference, May 1 - 3, 2017, Annapolis, MD"
+  year: 2017
+  month: 5
+
+- section: talk
+  authors: "Lee, W., Dorf, M., Dorr, M., Cohen, R., Ghosh, D., Rognlien, T., Hittinger, J., Umansky, M., Krasheninnikov, S."
+  title: "Status of the 5D gyrokinetic code COGENT and its initial applications"
+  citation: "58th Annual Meeting of the APS Division of Plasma Physics, October 31 - November 4, 2016, San Jose, CA"
+  year: 2016
+  month: 10
+  links:
+    - {label: "abstract", href: "http://meetings.aps.org/Meeting/DPP16/Session/GP10.109"}
+
+- section: talk
+  authors: "Dorf, M., Dorr, M., Ghosh, D., Hittinger, J., Rognlien, T., Cohen, R., Lee, W., Schwartz, P."
+  title: "Edge-relevant plasma simulations with the continuum code COGENT"
+  citation: "58th Annual Meeting of the APS Division of Plasma Physics, October 31 - November 4, 2016, San Jose, CA"
+  year: 2016
+  month: 10
+  links:
+    - {label: "abstract", href: "http://meetings.aps.org/Meeting/DPP16/Session/TP10.98"}
+
+- section: talk
+  authors: "Dorf, M., Dorr, M., Cohen, R. H., Lee, W., Ghosh, D., Hittinger, J., Rognlien, T."
+  title: "Continuum Kinetic Modeling of the Tokamak Plasma Edge with the COGENT code"
+  citation: "International Sherwood Fusion Theory Conference, April 4 - 6, 2016, Madison, WI"
+  year: 2016
+  month: 4
+
+- section: talk
+  authors: "Cohen, R. H., Dorf, M., Dorr, M., Lee, W., Ghosh, D., Hittinger, J., Rognlien, T."
+  title: "Continuum Kinetic Modeling of the Tokamak Plasma Edge with the COGENT"
+  citation: "US Transport Task Force Workshop, March 29 - April 1, 2016, Denver, CO"
+  year: 2016
+  month: 3
+
+- section: talk
+  authors: "Ghosh, D., Constantinescu, E. M., Brown, J."
+  title: "A Scalable, Parallel Implementation of Weighted, Non-Linear Compact Schemes"
+  citation: "SIAM Annual Meeting, July 7 - 11, 2014, Chicago, IL"
+  year: 2014
+  month: 7
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=64858"}
+    - {label: "presentation", href: "Files/2014_07_SIAMAN14_Chicago.pdf"}
+
+- section: talk
+  authors: "Brown, J., Ghosh, D."
+  title: "Fast solvers for implicit Runge-Kutta"
+  citation: "Thirteenth Copper Mountain Conference on Iterative Methods, April 6 - 11, 2014, Copper Mountain, CO"
+  year: 2014
+  month: 4
+
+- section: talk
+  authors: "Brown, J., Ghosh, D."
+  title: "Fast solvers for implicit Runge-Kutta systems"
+  citation: "Tenth Workshop of the INRIA-Illinois-ANL Joint Laboratory on Petascale Computing, November 25 - 27, 2013, Urbana, IL"
+  year: 2013
+  month: 11
+  links:
+    - {label: "presentation", href: "https://wiki.ncsa.illinois.edu/download/attachments/29164828/20131126-JointLabRungeKutta.pdf?version=1&modificationDate=1385565855000&api=v2"}
+
+- section: talk
+  authors: "Brown, J., Constantinescu, E. M., Ghosh, D., McInnes, L.C."
+  title: "BOUT++ and PETSc: Time integration and solver composition"
+  citation: "2013 BOUT++ Workshop, September 3 - 6, 2013, Lawrence Livermore National Laboratory, CA"
+  year: 2013
+  month: 9
+
+- section: talk
+  authors: "Constantinescu, E. M., Brown, J., Smith, B., McInnes, L.C., Ghosh, D., Balay, S."
+  title: "Robust Implicit-Explicit Time Stepping"
+  citation: "DOE Applied Math PI Meeting, August 6, 2013, Albuquerque, NM"
+  year: 2013
+  month: 8
+
+- section: talk
+  authors: "Ghosh, D., Medida, S., Baeder, J. D."
+  title: "Direct Numerical Simulation of Compressible Turbulent Flows with Weighted Non-Linear Compact Schemes"
+  citation: "65th Annual Meeting of the APS Division of Fluid Dynamics, November 18 – 20, 2012, San Diego, CA"
+  year: 2012
+  month: 11
+  links:
+    - {label: "abstract", href: "http://meetings.aps.org/link/BAPS.2012.DFD.R5.6"}
+    - {label: "presentation", href: "Files/2012_11_APS_SanDiego.pptx"}
+
+- section: talk
+  authors: "Ghosh, D., Medida, S., Baeder, J. D."
+  title: "High-Order Non-Oscillatory Compact Reconstruction Scheme for Overset Grids"
+  citation: "11th Symposium on Overset Composite Grids and Solution Technology, October 15 – 18, 2012, Dayton, OH"
+  year: 2012
+  month: 10
+  links:
+    - {label: "presentation", href: "Files/2012_10_OGS_Dayton.pdf"}
+
+- section: talk
+  authors: "Ghosh, D., Baeder, J. D."
+  title: "Application of Compact-Reconstruction WENO Schemes to the Navier-Stokes Equations"
+  citation: "SIAM Annual Meeting, July 9 – 13, 2012, Minneapolis, MN"
+  year: 2012
+  month: 7
+  links:
+    - {label: "abstract", href: "http://meetings.siam.org/sess/dsp_talk.cfm?p=51906"}
+    - {label: "presentation", href: "Files/2012_07_SIAMAN12_Minneapolis.pptx"}
+
+- section: talk
+  authors: "Ghosh, D., Baeder, J. D."
+  title: "High Order Compact Reconstruction Scheme with Weighted Essentially Non-Oscillatory Limiting"
+  citation: "AMS-MAA Joint Mathematics Meetings, Jan 4-7, 2012, Boston, MA"
+  year: 2012
+  links:
+    - {label: "abstract", href: "http://jointmathematicsmeetings.org/amsmtgs/2138_abstracts/1077-65-1385.pdf"}
+    - {label: "presentation", href: "Files/2012_01_JMM12_Boston.pptx"}
+
+- section: talk
+  authors: "Ghosh, D."
+  title: "Application of Weighted Essentially Non-Oscillatory Limiting to Compact Interpolation Schemes"
+  citation: "AIAA Region I Young Professional, Student & Education Conference, Nov 4, 2011, Laurel, MD"
+  year: 2011
+  links:
+    - {label: "presentation", href: "Files/2011_AIAAYPSE_Laurel.pptx"}
+
+- section: talk
+  authors: "Ghosh, D., Chatterjee, A."
+  title: "Higher-Order Non-Oscillatory Schemes in 2D Ideal Magneto-hydrodynamics"
+  citation: "9th Annual CFD Symposium, August 2006, Bangalore"
+  year: 2006
+  month: 8
+  links:
+    - {label: "full text", href: "Files/2006_Ghosh_Chatterjee_CFD_Symp.pdf"}
+
+- section: talk
+  authors: "Ghosh, D., Chatterjee, A."
+  title: "Higher-Order Non-Oscillatory Schemes in Ideal Magneto-hydrodynamics"
+  citation: "8th Annual CFD symposium, August 2005, Bangalore"
+  year: 2005
+  month: 8
+  links:
+    - {label: "full text", href: "Files/2005_Ghosh_Chatterjee_CFD_Symp.pdf"}
+
+- section: talk
+  authors: "Ghosh, D., Chatterjee, A."
+  title: "Radar Cross Section Computations for Low Observable Configurations"
+  citation: "18th National Conference for Aerospace Engineers, Institution of Engineers (I), November, 2004, IIT Kharagpur"
+  year: 2004
+  month: 11
+
+- section: talk
+  authors: "Ghosh, D., Vaghela, M.B., Chatterjee, A."
+  title: "Characteristic Based FVTD Computations for Low Observable Configuration"
+  citation: "7th Annual CFD symposium, August 2004, Bangalore"
+  year: 2004
+  month: 8
+  links:
+    - {label: "full text", href: "Files/2004_Ghosh_Vaghela_Chatterjee_CFD_Symp.pdf"}
+# ---- Added 2026-10-01 from ORCID 0000-0003-3910-2613, metadata verified via Crossref ----
+
+- section: journal
+  authors: "Tsai, P.-H., Chung, S. W., Ghosh, D., Loffeld, J., Choi, Y., Belof, J. L."
+  title: "Local reduced-order modeling for electrostatic plasmas by physics-informed solution manifold decomposition"
+  citation: "Computer Physics Communications, 322, 2026, 110039"
+  year: 2026
+  month: 5
+  doi: "10.1016/j.cpc.2026.110039"
+  selected: true
+
+- section: journal
+  authors: "Michel, P., Oudin, A., Rajesh, H., Ou, K., Chakraborty, D., Cao, S., Kur, E., Lancia, L., Ghosh, D., Riconda, C., Wurtele, J. S., Edwards, M. R."
+  title: "Entropy-mode-driven gas optics"
+  citation: "Physical Review Applied, 25, 2026, 024037"
+  year: 2026
+  month: 2
+  doi: "10.1103/pnhn-w6tl"
+
+# ---- Added 2026-10-01 from Google Scholar, metadata verified via Crossref ----
+
+- section: journal
+  authors: "de Jong, E. K., Gunawardena, N., Katona, J. E., Beydoun, H., Ghosh, D., Caldwell, P."
+  title: "Data-Driven Reduced Order Modeling for Warm Rain Microphysics"
+  citation: "Journal of Geophysical Research: Machine Learning and Computation, 3 (3), 2026, e2025JH001103"
+  year: 2026
+  month: 6
+  doi: "10.1029/2025JH001103"
+  selected: true
+
+- section: talk
+  authors: "Angus, J. R., Grote, D., Ghosh, D., van de Wetering, J. J., Kemp, A., Vay, J.-L."
+  title: "Energy-Conserving Implicit Particle-in-Cell Method in WarpX for Dense, Fusion Plasmas"
+  citation: "2026 IEEE International Conference on Plasma Science (ICOPS), 93"
+  year: 2026
+
+- section: report
+  authors: "Terasaki, G., Ghosh, D., Navid, A."
+  title: "Improved School and Workplace Interactions in ExaEpi, an Agent-Based Epidemiological Model"
+  citation: "Lawrence Livermore National Laboratory, Livermore, CA, 2025"
+  year: 2025
