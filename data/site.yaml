@@ -29,6 +29,18 @@ profile:
     - "Agent-based modeling"
     - "Finite-difference and finite-volume methods"
 
+# Video tickers rendered into the misc page sidebar, in order.
+# Refresh the data files with tools/fetch_playlists.py, then rebuild.
+tickers:
+  - label: "Travel"
+    playlist: "PLCJJtCoWifB_frF7nO8uVv8o0NTtx5wF6"
+    data: "travel_videos.json"
+    show: 20
+  - label: "Live performances"
+    playlist: "PLCJJtCoWifB9UBbEbQzD9FxYV8ryCVfBN"
+    data: "live_videos.json"
+    show: 20
+
 # Navigation order. label -> file
 nav:
   - {label: "Home",         file: "index.html"}

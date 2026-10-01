@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import yaml
 import layout
 import render_pubs
+import render_tickers
 
 
 def load(name):
@@ -41,6 +42,8 @@ def main():
                 print(f"  !! missing content/{page_file}, skipped")
                 continue
             body, extra = frag.read_text(encoding="utf-8").rstrip(), ""
+            if "<!--TICKERS-->" in body:
+                body = body.replace("<!--TICKERS-->", render_tickers.render(site))
         depth = page_file.count("/")
         prefix = "../" * depth
         out = layout.render(site, page_file, body, extra_jsonld=extra, prefix=prefix)

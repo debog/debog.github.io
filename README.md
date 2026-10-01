@@ -102,29 +102,62 @@ abstracts, lab reports). Worth checking a couple of times a year:
 ## Video tickers
 
 The `misc.html` sidebar carries two vertical, auto-scrolling strips of YouTube
-videos: **Travel** and **Live performances**. Card data lives in
-`data/travel_videos.json` and `data/live_videos.json` (id, title, duration);
-each strip shows the 20 most recent and links to the full playlist.
+videos. They are **generated at build time** from the data files, which are in
+turn refreshed from YouTube by a script — the page is not live.
+
+```
+YouTube playlist
+  -> tools/fetch_playlists.py   -> data/*_videos.json
+  -> tools/build_site.py        -> misc.html
+```
 
 | Playlist | Data file | Playlist id |
 |---|---|---|
 | Travel | `data/travel_videos.json` | `PLCJJtCoWifB_frF7nO8uVv8o0NTtx5wF6` |
 | Live performances | `data/live_videos.json` | `PLCJJtCoWifB9UBbEbQzD9FxYV8ryCVfBN` |
 
-To refresh after adding videos, re-extract from the playlist page. YouTube
-renders the list client-side, so the data sits in the `ytInitialData` blob and
-is keyed by **`lockupViewModel`** (it was `playlistVideoRenderer` until
-recently — that key now returns nothing):
+Which strips appear, and how many cards each shows, is declared under
+`tickers:` in `data/site.yaml`.
+
+### Refreshing
 
 ```
-curl -sA "Mozilla/5.0" "https://www.youtube.com/playlist?list=<ID>" > /tmp/pl.html
+python3 tools/fetch_playlists.py            # update the data files
+python3 tools/fetch_playlists.py --check    # report drift, write nothing (exit 1 if stale)
+python3 tools/build_site.py                 # regenerate the pages
 ```
 
-Pull `contentId`, the `lockupMetadataViewModel` title, and the duration badge
-out of each `lockupViewModel` into the JSON file, then rebuild. Thumbnails are
-hotlinked from `i.ytimg.com` at `/vi/<id>/mqdefault.jpg` (320x180) and
-lazy-loaded. Some thumbnails carry pillarboxing baked into the source image by
-YouTube; that is in the JPEG, not the CSS.
+`.github/workflows/refresh-playlists.yml` runs this weekly and on demand, and
+commits only when something actually changed. It is inert until pushed.
+
+### Why it is scraped
+
+- The **Data API** would need a key. A browser-side key on a public static site
+  is exposed to anyone who views source, and carries a quota.
+- The **playlist RSS feed** (`youtube.com/feeds/videos.xml?playlist_id=...`)
+  needs no key, but returns only the 15 newest entries and sends no
+  `Access-Control-Allow-Origin` header, so a browser on this site cannot fetch
+  it at all. It is no substitute for the full list.
+
+So the data is scraped from the public playlist page. Things to know:
+
+- The list is rendered client-side; the data sits in the `ytInitialData` blob
+  and is keyed by **`lockupViewModel`**. That key was `playlistVideoRenderer`
+  until ~2025 and will change again. A fetch returning 0 videos means the key
+  moved; the script exits non-zero rather than writing an empty list.
+- The first page caps at **100 entries**, so a longer playlist is truncated.
+  The strips show 20, so this does not matter for display, but the "All N on
+  YouTube" label must use the playlist's own reported total, which the script
+  records as `total`. Travel lists 100 of **150**; Live performances lists 98
+  of **103** (the gap is private or deleted entries, which YouTube counts but
+  does not show).
+- Back-to-back requests occasionally return a page without the data blob. The
+  script retries three times with backoff.
+- YouTube may serve a bot check to datacentre IPs such as GitHub's runners. If
+  the workflow starts failing, that is the likely cause; run the script locally
+  instead.
+
+### Behaviour
 
 A small inline script at the end of `content/misc.html` drives both strips: it
 clones each list once so the scroll wraps without a visible jump, and pauses on
@@ -143,6 +176,10 @@ Where the sidebar stacks under the gallery the cards go full-width and three
 and a half of them would overflow the screen, swallowing the page scroll, so
 the height is capped at 78% of the viewport and snapped down to the largest
 half-card count that fits (1.5 cards at 375x812).
+
+Thumbnails are hotlinked from `i.ytimg.com` at `/vi/<id>/mqdefault.jpg`
+(320x180) and lazy-loaded. Some carry pillarboxing baked into the source image
+by YouTube; that is in the JPEG, not the CSS.
 
 ## Photo gallery
 
