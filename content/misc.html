@@ -329,6 +329,48 @@
     var track = box.querySelector('.ticker__track');
     if (!track || !track.children.length) return;
 
+    /* Size the viewport to three cards and half of the fourth, so it is
+       visibly scrollable. Measured from a real card, so it stays correct at
+       any sidebar width. */
+    /* Size the viewport to three cards and half of the fourth, so it is
+       visibly scrollable. Measured from a real card, so it stays correct at
+       any sidebar width. */
+    function fitCards() {
+      var first = track.children[0];
+      if (!first) return;
+      var gap = parseFloat(getComputedStyle(track).rowGap) || 0;
+      var card = first.getBoundingClientRect().height;
+      if (card <= 0) return;
+      var height = function (n) { return n * card + (Math.ceil(n) - 1) * gap; };
+      var want = 3.5;
+      /* When the sidebar stacks under the gallery the cards go full-width, and
+         three and a half of them overflow the screen, which would swallow the
+         page scroll. Fall back to the largest half-card count that fits. */
+      var cap = 0.78 * window.innerHeight;
+      if (height(want) > cap) {
+        var whole = Math.floor((cap + gap) / (card + gap));
+        want = Math.max(1.5, whole - 0.5);
+      }
+      box.style.maxHeight = height(want) + 'px';
+    }
+
+    /* Re-measure when the column width changes. Keyed on width so that
+       setting our own height cannot retrigger this. */
+    var lastWidth = -1;
+    function refit() {
+      var w = box.clientWidth;
+      if (w === lastWidth) return;
+      lastWidth = w;
+      fitCards();
+    }
+    refit();
+    if (window.ResizeObserver) new ResizeObserver(refit).observe(box);
+    var rt;
+    window.addEventListener('resize', function () {
+      clearTimeout(rt);
+      rt = setTimeout(refit, 150);
+    });
+
     Array.prototype.slice.call(track.children).forEach(function (li) {
       var copy = li.cloneNode(true);
       copy.setAttribute('aria-hidden', 'true');

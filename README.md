@@ -131,6 +131,19 @@ clones each list once so the scroll wraps without a visible jump, and pauses on
 hover, focus and drag. Without JavaScript they stay ordinary scrollable lists,
 and they do not move under `prefers-reduced-motion: reduce`.
 
+The same script sizes each strip to **three cards and half of the fourth**, so
+the clipped card signals that the list scrolls on its own. The height is
+measured from a real card rather than hard-coded, and recomputed on resize via
+a `ResizeObserver` keyed on width (keyed on width so that setting the height
+cannot retrigger it). Card heights are made uniform by clamping titles to two
+lines and reserving two lines even for short ones; without that, "half a card"
+would vary with the title.
+
+Where the sidebar stacks under the gallery the cards go full-width and three
+and a half of them would overflow the screen, swallowing the page scroll, so
+the height is capped at 78% of the viewport and snapped down to the largest
+half-card count that fits (1.5 cards at 375x812).
+
 ## Photo gallery
 
 Each year in `content/misc.html` is a `<section class="year">` holding a

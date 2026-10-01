@@ -216,7 +216,7 @@ td.num, th.num { text-align: right; padding-right: 1.1rem; font-variant-numeric:
   overflow-y: auto;
   overscroll-behavior-y: contain;
   scrollbar-width: thin;
-  max-height: 23rem;
+  max-height: 41rem;
   margin: 0 0 .35rem;
   border-radius: var(--radius);
 }
@@ -257,8 +257,12 @@ td.num, th.num { text-align: right; padding-right: 1.1rem; font-variant-numeric:
   font-variant-numeric: tabular-nums;
 }
 .vid__title {
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   margin-top: .3rem;
+  min-height: 2.6em;        /* two lines at line-height 1.3 */
   font-size: .83rem;
   line-height: 1.3;
   color: var(--fg-muted);
