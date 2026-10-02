@@ -1274,3 +1274,12 @@
   citation: "IFE-STAR Conference, March 22 - 27, 2026, Washington, DC"
   year: 2026
   month: 3
+
+- section: talk
+  authors: "Beydoun, H., Ghosh, D., de Jong, E. K., McGuffin, D., Kendrick, C., Lee, J., Gardner, D. J., Lundquist, K."
+  title: "Super Droplet Cloud Microphysics in the Energy Research and Forecasting Model"
+  citation: "17th Conference on Cloud Physics, 2026 AMS Madison Summit, August 3 - 7, 2026, Madison, WI. Poster, Cloud Physics Poster I"
+  year: 2026
+  month: 8
+  links:
+    - {label: "abstract", href: "https://ams.confex.com/ams/2026Summit/meetingapp.cgi/Paper/484102"}
