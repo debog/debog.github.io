@@ -1243,6 +1243,8 @@
   year: 2026
   month: 6
   doi: "10.1029/2025JH001103"
+  links:
+    - {label: "full text", href: "Files/2026_deJong_EtAl_JGRMLC.pdf"}
   selected: true
 
 - section: talk
