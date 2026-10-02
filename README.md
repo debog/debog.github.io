@@ -207,6 +207,28 @@ year's albums stay under their own heading instead of running across the
 whole gallery. Years with few entries use a single column; below roughly
 560px everything collapses to one column.
 
+## Search Console
+
+Property: `https://debog.github.io/` (URL-prefix), verified by the existing
+`google*.html` files. HTTPS is enforced, so `http://` 301-redirects.
+
+State as of 2 October 2026:
+
+- The sitemap was submitted on 1 October and still reports **"Couldn't fetch"**
+  with no "Last read". The sitemap itself is fine -- it serves HTTP 200 as
+  `application/xml` with the correct namespace, and `robots.txt` both allows
+  everything and points at it. URL Inspection confirms `Crawl allowed: Yes`,
+  `Page fetch: Successful`, `Indexing allowed: Yes`.
+- The underlying situation is that Google's **last crawl of the site was
+  16 April 2026**, months before the rebuild, and inspected pages report
+  "No referring sitemaps detected". Google simply has not come back yet.
+- Indexing was requested (priority crawl queue) for the home page,
+  `research.html`, `publications.html`, `resume.html` and `codes.html`.
+
+If the sitemap still reads "Couldn't fetch" after a week of the pages being
+re-crawled, remove and re-add it in the Sitemaps panel. Do not treat it as a
+site fault without first re-checking the three signals above.
+
 ## Notes
 
 - There are no external fonts or scripts. The stylesheet is the only asset,
