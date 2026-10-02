@@ -1248,8 +1248,9 @@
 - section: talk
   authors: "Angus, J. R., Grote, D., Ghosh, D., van de Wetering, J. J., Kemp, A., Vay, J.-L."
   title: "Energy-Conserving Implicit Particle-in-Cell Method in WarpX for Dense, Fusion Plasmas"
-  citation: "2026 IEEE International Conference on Plasma Science (ICOPS), 93"
+  citation: "2026 IEEE International Conference on Plasma Science (ICOPS), June 22 - 26, 2026, Lake Tahoe, NV, 93"
   year: 2026
+  month: 6
 
 - section: report
   authors: "Terasaki, G., Ghosh, D., Navid, A."
@@ -1258,3 +1259,10 @@
   year: 2025
   links:
     - {label: "OSTI", href: "https://www.osti.gov/biblio/2587985"}
+
+- section: talk
+  authors: "Angus, J. R., Grote, D., Ghosh, D., Kemp, A., Wilks, S., Vay, J.-L."
+  title: "Advancing WarpX with Energy-Conserving Implicit Particle-in-Cell Methods and Applications to Ion Fast Ignition"
+  citation: "2026 IEEE International Conference on Plasma Science (ICOPS), June 22 - 26, 2026, Lake Tahoe, NV. Poster, with the KISMET SciDAC collaboration"
+  year: 2026
+  month: 6
