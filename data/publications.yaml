@@ -19,6 +19,7 @@
   month: 10
   doi: "10.1063/5.0293154"
   links:
+    - {label: "arXiv", href: "https://arxiv.org/abs/2507.19729"}
     - {label: "full text", href: "Files/2025_Dorf_EtAl_PoP_2.pdf"}
 
 - section: journal
@@ -90,6 +91,7 @@
   month: 1
   doi: "10.1016/j.cma.2023.116535"
   links:
+    - {label: "arXiv", href: "https://arxiv.org/abs/2308.05882"}
     - {label: "full text", href: "Files/2024_Bonneville_EtAl_CMAME.pdf"}
 
 - section: journal
@@ -110,6 +112,7 @@
   month: 1
   doi: "10.1016/j.compfluid.2022.105744"
   links:
+    - {label: "arXiv", href: "https://arxiv.org/abs/2211.16718"}
     - {label: "full text", href: "Files/2023_Kim_EtAl_CompFluids.pdf"}
 
 - section: journal
@@ -161,6 +164,7 @@
   month: 11
   doi: "10.1007/s10915-018-0726-6"
   links:
+    - {label: "arXiv", href: "https://arxiv.org/abs/1707.08247"}
     - {label: "full text", href: "Files/2018_GhoshEtAl_JSC.pdf"}
 
 - section: journal
@@ -171,6 +175,7 @@
   month: 11
   doi: "10.1016/j.jcp.2018.07.008"
   links:
+    - {label: "arXiv", href: "https://arxiv.org/abs/1712.01978"}
     - {label: "full text", href: "Files/2018_DorrEtAl_JCP.pdf"}
 
 - section: journal
@@ -191,6 +196,7 @@
   month: 1
   doi: "10.1137/15M1044369"
   links:
+    - {label: "arXiv", href: "https://arxiv.org/abs/1510.05751"}
     - {label: "full text", href: "Files/2016_Ghosh_Constantinescu_SISC.pdf"}
 
 - section: journal
@@ -292,6 +298,7 @@
   year: 2023
   month: 12
   links:
+    - {label: "arXiv", href: "https://arxiv.org/abs/2312.01021"}
     - {label: "poster", href: "https://nips.cc/media/PosterPDFs/NeurIPS%202023/76111.png"}
     - {label: "full text", href: "Files/2023_Bonneville_EtAl_NeurIPS.pdf"}
 
