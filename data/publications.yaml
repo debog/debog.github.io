@@ -379,6 +379,7 @@
   title: "Numerical Simulation of Vortex Ring Interactions with Solid Wall"
   citation: "49th AIAA Aerospace Sciences Meeting, Jan 4-7, 2011, Orlando, FL, <a href=\"http://arc.aiaa.org/doi/abs/10.2514/6.2011-675\" >doi:10.2514/6.2011-675</a>"
   year: 2011
+  month: 1
   links:
     - {label: "full text", href: "Files/2011_Ghosh_Baeder_AIAA_ASM.pdf"}
 
@@ -1166,6 +1167,7 @@
   title: "High Order Compact Reconstruction Scheme with Weighted Essentially Non-Oscillatory Limiting"
   citation: "AMS-MAA Joint Mathematics Meetings, Jan 4-7, 2012, Boston, MA"
   year: 2012
+  month: 1
   links:
     - {label: "abstract", href: "http://jointmathematicsmeetings.org/amsmtgs/2138_abstracts/1077-65-1385.pdf"}
     - {label: "presentation", href: "Files/2012_01_JMM12_Boston.pptx"}
@@ -1175,6 +1177,7 @@
   title: "Application of Weighted Essentially Non-Oscillatory Limiting to Compact Interpolation Schemes"
   citation: "AIAA Region I Young Professional, Student & Education Conference, Nov 4, 2011, Laurel, MD"
   year: 2011
+  month: 11
   links:
     - {label: "presentation", href: "Files/2011_AIAAYPSE_Laurel.pptx"}
 
@@ -1264,3 +1267,10 @@
   year: 2025
   links:
     - {label: "OSTI", href: "https://www.osti.gov/biblio/2587985"}
+
+- section: talk
+  authors: "Vay, J.-L., Almgren, A., Angus, J. R., Formenti, A., Geveci, B., Ghosh, D., Grote, D., Huebl, A., Jambunathan, R., Kemp, A., Lehe, R., Myers, A., Palastro, J., Riedman, A., Shapoval, O., Weichman, K., van de Wetering, J., Wilks, S., Yenpure, A., Zhang, W., Zoni, E."
+  title: "WarpX Exascale open-source code for kinetic laser-plasma modeling – latest developments and applications to IFE"
+  citation: "IFE-STAR Conference, March 22 - 27, 2026, Washington, DC"
+  year: 2026
+  month: 3
