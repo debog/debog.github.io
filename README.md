@@ -201,11 +201,34 @@ by YouTube; that is in the JPEG, not the CSS.
 
 ## Photo gallery
 
+**Edit `content/misc.html`, never `misc.html`.** Every root `.html` is
+generated and is overwritten by the next `tools/build_site.py` run, so a hand
+edit there is lost. If one has already been made, recover it from git
+(`git show <commit>:misc.html`) before rebuilding.
+
 Each year in `content/misc.html` is a `<section class="year">` holding a
 heading and one `<ul>`. The two-column flow is applied to the `<ul>`, so a
 year's albums stay under their own heading instead of running across the
 whole gallery. Years with few entries use a single column; below roughly
 560px everything collapses to one column.
+
+To add a year, copy an existing `<section class="year">` block and keep the
+shape exactly:
+
+```html
+<section class="year">
+<h3 id="yYYYY">YYYY</h3>
+<ul>
+<li><a href="...">YYYY Month: Place</a></li>
+</ul>
+</section>
+```
+
+The `<ul>` must wrap the items. Bare `<li>` elements outside a `<ul>` miss the
+`.year ul` rule that supplies the two columns and removes the bullet markers,
+so that year renders as a single indented bulleted list while every other year
+is in two columns. Add the matching `<li><a href="#yYYYY">YYYY</a></li>` to the
+year-nav list at the top, newest first.
 
 ## Search Console
 
